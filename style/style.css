@@ -67,26 +67,21 @@ body {
 	width: 1100px;
 	height:40px;
 	position: relative;
-	background-color: black;
+
 }
 
 #menu ul {
 	margin: 0;
 	padding: 0;
-	margin-left: 0;
-  	margin-right: 0;
-	float: left;
 	position: relative;
-	padding-top: 0px;
 	
 }
 
 #menu ul li {
 
-	margin-right: 1px;
-	float: left;
+	border-right: 1px solid #000;
+	display: inline-block;
 	list-style-type: none;
-	position: center ;
 	
 }
 
