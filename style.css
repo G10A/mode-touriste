@@ -1,0 +1,203 @@
+body {
+	overflow-x: hidden;
+	margin: 0;
+	background:  #66b6fc;
+	overflow-x: scroll;
+}
+
+
+#banner1 {
+	margin-left: auto;
+  	margin-right: auto;
+	display: block;
+	background-color: white ;
+	height: 104px;
+	width: 1100px;
+	
+}
+
+#banner1 div#titre {
+	position: absolute;
+	margin-top: 5px;
+	margin-left: 100px;		
+	margin-right: 10px;
+	font-weight: bold;
+	font-size: 30px;
+
+
+	
+}
+#banner1 div.logo {
+			float: left;
+			padding-top: 0px;
+			margin-left: 10px;
+
+			width: 100px;
+			height: 100px;
+		}
+
+
+#banner1 div#register {
+	position: absolute;
+	margin-top: 65px;
+	margin-left: 780px;
+	list-style-type: none;
+}	
+
+
+#banner1 div#login{
+	position: absolute;
+	margin-top: -20px;
+	margin-left: 900px;
+	list-style-type: none;
+
+}
+#banner1 div#langue{
+	position: absolute;
+	margin-top: 35px;
+	margin-left: 780px;
+	list-style-type: none;
+}
+
+
+
+#menu {
+	margin-left: auto;
+  	margin-right: auto;
+	width: 1100px;
+	height:40px;
+	position: relative;
+	background-color: black;
+}
+
+#menu ul {
+	margin: 0;
+	padding: 0;
+	margin-left: 0;
+  	margin-right: 0;
+	float: left;
+	position: relative;
+	padding-top: 0px;
+	
+}
+
+#menu ul li {
+
+	margin-right: 1px;
+	float: left;
+	list-style-type: none;
+	position: center ;
+	
+}
+
+#menu ul li a {
+	position: center top;
+	text-align: center;
+	padding-top: 10px;
+	display: inline-block;
+	height: 30px;
+	width: 182.34px;
+	color: black;
+	text-decoration: none;
+	background:-moz-linear-gradient(top, #fc3e0f 0%, #ff670f 28%, #f9490e 52%, #ff670f 71%, #ff670f 83%, #ff330f 100%);
+}
+
+#menu ul li a:hover {
+	color: white;
+
+}
+
+#banner2 {
+	margin-left: auto;
+	margin-right: auto;
+	display: block;
+	background-color: yellow;
+	height: 50px;
+	width: 1100px;
+}
+
+#contenuprincipal {
+	min-height: 500px;
+	margin-left: auto;
+	margin-right: auto;
+	display: block;
+	width: 1100px;
+	margin: auto;
+}
+#contenuprincipal p {
+  margin-top: 0px;
+}
+ 
+#contenuprincipal fieldset {
+  margin-bottom: 15px;
+  padding: 10px;
+  width: 500px;
+}
+ 
+#contenuprincipal legend {
+  padding: 0px 3px;
+  font-weight: bold;
+  font-variant: small-caps;
+}
+ 
+#contenuprincipal label {
+  width: 110px;
+  display: inline-block;
+  vertical-align: top;
+  margin: 6px;
+}
+ 
+#contenuprincipal em {
+  font-weight: bold;
+  font-style: normal;
+  color: #f00;
+}
+ 
+#contenuprincipal input:focus {
+  background: #eaeaea;
+}
+ 
+#contenuprincipal input, textarea {
+  width: 249px;
+}
+ 
+#contenuprincipal textarea {
+  height: 100px;
+}
+ 
+#contenuprincipal select {
+  width: 254px;
+}
+ 
+#contenuprincipal input[type=checkbox] {
+  width: 10px;
+}
+ 
+#contenuprincipal input[type=submit] {
+  width: 200px;
+  padding: 10px;
+  margin-left: 150px;
+}
+
+
+
+
+
+footer {
+	padding-bottom: 0px;
+	margin-left: auto;
+	margin-right: auto;
+	text-align: center;
+	display: block;
+	background-color: pink;
+	height: 60px;
+	width: 1100px;
+}
+
+footer p {
+	top: 20px;
+	color: grey;
+	font-weight: bold;
+	position: relative;
+	
+}
