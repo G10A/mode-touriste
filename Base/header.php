@@ -1,7 +1,7 @@
 			<div id="banner1">
 				<div class="logo">
 				<span id="logo_holder">
-					<a href="accueil.html">
+					<a href="accueil.php">
 					<img src="image/azerty.png" width="100" height="100">
 					</a>
 				</span>
