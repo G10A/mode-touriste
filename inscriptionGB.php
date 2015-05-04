@@ -4,8 +4,8 @@
 		<body>
 
 		<div id="site">
-			<?php include("Base/headerGB.php"); ?>
-		<?php include("Base/menuGB.php"); ?>
+			<?php include("BaseGB/headerGB.php"); ?>
+		<?php include("BaseGB/menuGB.php"); ?>
 
 			<div id="contenuprincipal">
 				<h1>Register</h1>
