@@ -1,11 +1,11 @@
 <!DOCTYPE html>
 <html>
-	<?php include("head.php"); ?>
+	<?php include("Base/head.php"); ?>
 	<body>
 
 		<div id="site">
-			<?php include("header.php"); ?>
-			<?php include("menu.php"); ?>
+			<?php include("Base/header.php"); ?>
+			<?php include("Base/menu.php"); ?>
 
 
 
