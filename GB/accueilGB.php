@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html>
-	<?php include("Base/head.php"); ?>
+	<?php include("GB\Base/head.php"); ?>
 	<body>
 
 		<div id="site">
