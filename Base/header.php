@@ -7,7 +7,7 @@
 				</span>
 				</div>
 				<div id="register">
-					<a href="inscription.html">Enregistrez vous</a>
+					<a href="inscription.php">Enregistrez vous</a>
 				</div>
 				<div id="login">
 				<form method="post" action="traitement.php"> 
