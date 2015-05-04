@@ -22,9 +22,7 @@
 
 			</div>
 
-			<footer>
-				<p>MOI | Tous droits réservés</p>
-			</footer>
+			<?php include("Base/footer.php"); ?>
 		</div>
 
 	</body>
