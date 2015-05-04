@@ -21,9 +21,7 @@
 
 			</div>
 
-			<footer>
-				<p>ME | All rights reserved</p>
-			</footer>
+			<?php include("GB/Base/footerGB.php"); ?>
 		</div>
 
 	</body>
