@@ -1,5 +1,4 @@
-	<!DOCTYPE html>
-	<html>
+
 			<div id="banner1">
 				<div class="logo">
 				<span id="logo_holder">
@@ -8,4 +7,4 @@
 					</a>
 				</span>
 				</div>
-	</html>
+
