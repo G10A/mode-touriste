@@ -8,7 +8,7 @@
 	<body>
 
 		<div id="site">
-			
+			<?php include("header.php"); ?>
 			<nav id="menu">
 				<ul>
 					<li><a href="Accueil.html">Accueil</a></li><!--
