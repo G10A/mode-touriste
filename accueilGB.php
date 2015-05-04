@@ -1,11 +1,11 @@
 <!DOCTYPE html>
 <html>
-	<?php include("GB\Base/head.php"); ?>
+	<?php include("Base/head.php"); ?>
 	<body>
 
 		<div id="site">
-		<?php include("Base/headerGB.php"); ?>
-		<?php include("Base/menuGB.php"); ?>
+		<?php include("BaseGB/headerGB.php"); ?>
+		<?php include("BaseGB/menuGB.php"); ?>
 
 
 			<div id="contenuprincipal">
@@ -21,7 +21,7 @@
 
 			</div>
 
-			<?php include("GB/Base/footerGB.php"); ?>
+			<?php include("BaseGB/footerGB.php"); ?>
 		</div>
 
 	</body>
