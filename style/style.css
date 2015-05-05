@@ -59,6 +59,16 @@ body {
 	list-style-type: none;
 }
 
+#banner1 div#barrederecherche{
+	position: absolute;
+	margin-top: 60px;
+	margin-left: 450px;
+	height: 35px		
+}
+#banner1 div#barrederecherche.champ{
+	height: 35px;
+	width: 600px;
+}
 
 
 #menu {
@@ -117,57 +127,10 @@ body {
   margin-top: 0px;
 }
  
-#contenuprincipal fieldset {
-  margin-bottom: 15px;
-  padding: 10px;
-  width: 500px;
-}
- 
-#contenuprincipal legend {
-  padding: 0px 3px;
-  font-weight: bold;
-  font-variant: small-caps;
-}
- 
-#contenuprincipal label {
-  width: 110px;
-  display: inline-block;
-  vertical-align: top;
-  margin: 6px;
-}
- 
-#contenuprincipal em {
-  font-weight: bold;
-  font-style: normal;
-  color: #f00;
-}
- 
-#contenuprincipal input:focus {
-  background: #eaeaea;
-}
- 
-#contenuprincipal input, textarea {
-  width: 249px;
-}
- 
-#contenuprincipal textarea {
-  height: 100px;
-}
- 
-#contenuprincipal select {
-  width: 254px;
-}
- 
-#contenuprincipal input[type=checkbox] {
-  width: 10px;
-}
- 
-#contenuprincipal input[type=submit] {
-  width: 200px;
-  padding: 10px;
-  margin-left: 150px;
-}
+#contenuprincipal span#tomatecerise {
+	margin-left: 200px;
 
+}
 
 
 

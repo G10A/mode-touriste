@@ -30,4 +30,12 @@
 				<div id="titre">
 				<p>Les Vergers</p>
 				</div>
+
+				<div id="barrederecherche">
+                    <form action="" class="formulaire">
+                       <input class="champ" type="text" placeholder="rechercher..."/>
+                        <input class="bouton" type="button" value=" " />
+                     
+                </form>
+                </div>
 			</div>

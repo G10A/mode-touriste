@@ -16,7 +16,11 @@
 					Pour plus de fonctionnalités, il est recommandé de se connecter<br>
 					Si vous ne possédez pas de compte, vous pouvez vous inscrire</p>
 
-
+					<span id="tomatecerise">
+					<a href="offres.php">
+					<img src="image/tomatescerises.jpg" width="500" height="300">
+					</a>
+				</span>
 
 
 
