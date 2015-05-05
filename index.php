@@ -33,7 +33,7 @@ $registerOK = FALSE;
                if($reponse == NULL){
 
                		//Même chose pour l'email
-               		$reponse = $bdd -> query('SELECT email FROM test WHERE email ='$_POST['email']'');
+               		$reponse = $bdd -> query('SELECT email FROM test WHERE email = $_POST["email"]');
                		if($reponse == NULL){
                
                   
