@@ -113,7 +113,7 @@ $registerOK = FALSE;
 
 
 <?php // On affiche les erreurs :
-   if($error == TRUE){ echo "<p text-align="center", color="red";>".$errorMSG."</p>"; }
+   if($error == TRUE){ echo $errorMSG; }
 ?>
 <?php // Si l'inscription s'est bien déroulée on affiche le succès :
    if($registerOK == TRUE){ echo "<p text-align="center" color="green";><strong>".$registerMSG."</strong></p>"; }
