@@ -95,6 +95,7 @@ body {
 	color: black;
 	text-decoration: none;
 	background:-moz-linear-gradient(top, #fc3e0f 0%, #ff670f 28%, #f9490e 52%, #ff670f 71%, #ff670f 83%, #ff330f 100%);
+	background:-webkit-linear-gradient(top, #fc3e0f 0%, #ff670f 28%, #f9490e 52%, #ff670f 71%, #ff670f 83%, #ff330f 100%);
 }
 
 #menu ul li a:hover {
