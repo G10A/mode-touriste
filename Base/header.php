@@ -12,8 +12,8 @@
 				<div id="login">
 				<form method="post" action="traitement.php"> 
 				    <p style= "font:  17pt serif">
-				        <input type="text" name="pseudo" id="pseudo" placeholder="pseudo" size="25" maxlength="10"  /><br>
-				        <input type="password" name="MDP" id="MDP" placeholder="mot de passe" size="25" /><br>
+				        <input type="text" name="pseudo" id="pseudo" placeholder="pseudo" size="20" maxlength="10"  /><br>
+				        <input type="password" name="MDP" id="MDP" placeholder="mot de passe" size="20" /><br>
 				        <input type="submit" name="connexion"  value=" Connectez vous"/>
 				    </p>
 				</form>
