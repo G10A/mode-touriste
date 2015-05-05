@@ -28,16 +28,16 @@ $registerOK = FALSE;
         	if($_POST['email'] == $_PSOT['email2']){
                 
                 // Si c'est bon on regarde dans la base de donnée si le nom de compte est déjà utilisé :
-                $reponse = $bdd -> query('SELECT pseudo FROM test WHERE pseudo = '$_POST['Nom de compte']'');
+                $reponse = $bdd -> query('SELECT pseudo FROM test WHERE pseudo == '$_POST['Nom de compte']'');
                 
-            	// On compte combien de valeur à pour nom de compte celui tapé par l'utilisateur.
+            	// On compte combien de valeur a pour nom de compte celui tapé par l'utilisateur.
             	$reponse = mysql_num_rows($reponse);
             
                // Si $sql est égal à 0 (c'est-à-dire qu'il n'y a pas de nom de compte avec la valeur tapé par l'utilisateur
                if($reponse == 0){
 
                		//Même chose pour l'email
-               		$reponse = $bdd -> query('SELECT email FROM test WHERE email ='$_POST['email']'');
+               		$reponse = $bdd -> query('SELECT email FROM test WHERE email =='$_POST['email']'');
                		$reponse = mysql_num_rows($reponse);
                		if($reponse == 0){
                
