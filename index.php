@@ -25,7 +25,7 @@ $registerOK = FALSE;
         elseif($_POST['pass'] == $_POST['pass2']){
 
         	//Et si les deux adresses email correspondent
-        	if($_POST['email'] == $_PSOT['email2']){
+        	if($_POST['email'] == $_POST['email2']){
                 
                 // Si c'est bon on regarde dans la base de donnée si le nom de compte est déjà utilisé :
                 $reponse = $bdd -> query('SELECT pseudo FROM test WHERE pseudo = '$_POST['Nom de compte']'');
