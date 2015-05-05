@@ -1,53 +1,11 @@
 <!DOCTYPE html>
 <html>
-	<head>
-		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-		<title>Inscription</title>
-		<link rel="stylesheet" type="text/css" href="style/style.css" />
-	</head>
+	<?php include("Base/head.php"); ?>
 		<body>
 
 		<div id="site">
-			<div id="banner1">
-				<div class="logo">
-				<span id="logo_holder">
-					<a href="file:///C:/wamp/www/Les-Vergers/index.html">
-					<img src="image/azerty.png" width="100" height="100">
-					</a>
-				</span>
-				</div>
-				
-				<div id="login">
-				<form method="post" action="traitement.php"> 
-				    <p style= "font:  17pt serif">
-				        <input type="text" name="pseudo" id="pseudo" placeholder="pseudo" size="25" maxlength="10"  /><br>
-				        <input type="password" name="MDP" id="MDP" placeholder="mot de passe" size="25" /><br>
-				        <input type="submit" name="inscrit"  value=" Connectez vous"/>
-				    </p>
-				</form>
-				</div>
-				<div id="langue">
-				 <select name=langue style="width:8em">
-				  <option value="francais">Francais</option>
-				  <option value="english">English</option>
-				</select> 
-				</div>			
-
-				<div id="titre">
-				<p>Les Vergers</p>
-				</div>
-
-			</div>
-			<div id="menu">
-				<ul>
-					<li><a href="Accueil.html">Accueil</a></li><!--
-					--><li><a href="Profil.html">Profil</a></li><!--
-					--><li><a href="Offres.html">Offres</a></li><!--
-					--><li><a href="Deposer.html">Deposer une offre</a></li><!--	
-					--><li><a href="Forum.html">Forum</a></li><!--
-					--><li><a href="Support.html">Support</a></li>
-				</ul>
-			</div>
+			<?php include("Base/header.php"); ?>
+			<?php include("Base/menu.php"); ?>
 
 			<div id="contenuprincipal">
 				<h1>Inscription</h1>
@@ -118,6 +76,7 @@
         <input type="submit" name="register" value="S'inscrire"/>
         
         </form>
+        <?php include("Base/footer.php"); ?>
     	</div>
     </body>
 
