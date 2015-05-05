@@ -14,7 +14,7 @@
 				    <p style= "font:  17pt serif">
 				        <input type="text" name="pseudo" id="pseudo" placeholder="nickname" size="25" maxlength="10"  /><br>
 				        <input type="password" name="MDP" id="MDP" placeholder="password" size="25" /><br>
-				        <input type="submit" name="Log in"  value=" Connectez-vous"/>
+				        <input type="submit" name="Log in"  value=" Connect"/>
 				    </p>
 				</form>
 				</div>
