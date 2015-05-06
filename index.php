@@ -92,8 +92,12 @@ $registerOK = FALSE;
             
         }
       
-      // Sinon si les deux mots de passes sont différents :      
-      elseif($_POST['pass'] != $_POST['pass2']){
+      // Sinon si les deux mots de passes sont différents : 
+      elseif (isset($_POST['pass']))
+      {
+          // Instructions si $_POST['truc'] existe
+
+      if($_POST['pass'] != $_POST['pass2']){
       
          $error = TRUE;
          
@@ -104,6 +108,7 @@ $registerOK = FALSE;
          $pass = NULL;
       
       }
+    }
       
      
         

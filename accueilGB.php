@@ -11,8 +11,9 @@
 			<div id="contenuprincipal">
 			
 				<p>Welcome on our website<br>
-					Here, you can submit an offer and watch those of other customers<br>
-					For more features, please log inr<br>
+					Here, watch those of other customers<br>
+					For more features, please log in,<br>
+					after that, you can submit an offer<br>
 					If you don't own an an account, you can register for free</p>
 
 				<span id="tomatecerise">

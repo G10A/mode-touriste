@@ -74,6 +74,9 @@
        <td><textarea name="commentaire" id="commentaire"></textarea></td>
     	   </tr>
             
+            <tr>
+                <td><input type="file" name="photo" /></td>
+            </tr>
             
             </table>
         

@@ -76,8 +76,9 @@
         <input type="submit" name="register" value="S'inscrire"/>
         
         </form>
-        <?php include("Base/footer.php"); ?>
+        
     	</div>
+        <?php include("Base/footer.php"); ?>
     </body>
 
 </html>
