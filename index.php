@@ -11,7 +11,7 @@ $registerOK = FALSE;
     if(isset($_POST['register'])){
         
         // On regarde si tout les champs sont remplis, sinon, on affiche un message à l'utilisateur.
-        if($_POST['Nom'] == NULL OR $_POST['Prenom'] == NULL OR $_POST['Année de naissance'] == NULL OR $_POST['sexe'] == NULL OR $_POST['Localité'] == NULL OR $_POST['Nom de compte'] == NULL OR $_POST['pass'] == NULL OR $_POST['pass2'] == NULL OR $_POST['email'] == NULL OR $_POST['email2'] == NULL){
+        if($_POST['Nom'] == NULL OR $_POST['Prenom'] == NULL OR $_POST['Année de naissance'] == NULL OR $_POST['sexe'] == NULL OR $_POST['Localité'] == NULL OR $_POST['login'] == NULL OR $_POST['pass'] == NULL OR $_POST['pass2'] == NULL OR $_POST['email'] == NULL OR $_POST['email2'] == NULL){
             
             // On met la variable $error à TRUE pour que par la suite le navigateur sache qu'il y'a une erreur à afficher.
             $error = TRUE;
@@ -28,7 +28,7 @@ $registerOK = FALSE;
         	if($_POST['email'] == $_POST['email2']){
                 
                 // Si c'est bon on regarde dans la base de donnée si le nom de compte est déjà utilisé :
-                $reponse = $bdd -> query('SELECT pseudo FROM test WHERE pseudo = $_POST["Nom de compte"]');
+                $reponse = $bdd -> query('SELECT pseudo FROM test WHERE pseudo = $_POST["login"]');
             
                if($reponse == NULL){
 
@@ -39,7 +39,7 @@ $registerOK = FALSE;
                   
 						// Si tout ce passe correctement, on peut maintenant l'inscrire dans la base de données :
                         $requete = $bdd->prepare('INSERT INTO test(nom, prenom, année de naissance, sexe, localité, pseudo, mot de passe, email) VALUES (?, ?, ?, ?, ?, ?, ?, ?)');
-                        $requete = execute(array($_POST['Nom'], $_POST['Prenom'], $_POST['Année de naissance'], $_POST['sexe'], $_POST['sexe'], $_POST['Localité'], $_POST['Nom de compte'], $_POST['pass'], $_POST['email']));
+                        $requete = execute(array($_POST['Nom'], $_POST['Prenom'], $_POST['Année de naissance'], $_POST['sexe'], $_POST['sexe'], $_POST['Localité'], $_POST['login'], $_POST['pass'], $_POST['email']));
                            
                            
                            // Si la requête s'est bien effectué :
@@ -72,7 +72,7 @@ $registerOK = FALSE;
                
                   $error = TRUE;
                   
-                  $errorMSG = 'Le nom de compte <strong>'.$_POST['nom de compte'].'</strong> est déjà utilisé !';
+                  $errorMSG = 'Le nom de compte <strong>'.$_POST['login'].'</strong> est déjà utilisé !';
                   
                   $login = NULL;
                   
