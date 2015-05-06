@@ -72,7 +72,7 @@ $registerOK = FALSE;
                
                   $error = TRUE;
                   
-                  $errorMSG = 'Le nom de compte <strong>'.$_POST['login'].'</strong> est déjà utilisé !';
+                  $errorMSG = 'Le nom de compte <strong>'.$_POST['nom de compte'].'</strong> est déjà utilisé !';
                   
                   $login = NULL;
                   
