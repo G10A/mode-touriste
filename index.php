@@ -17,7 +17,7 @@ $registerOK = FALSE;
             $error = TRUE;
             
             // On écrit le message à afficher :
-            $errorMSG = 'Tout les champs doivent être remplis !';
+            $errorMSG = 'Tous les champs doivent être remplis !';
                 
         }
         
