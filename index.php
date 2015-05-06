@@ -11,7 +11,7 @@ $registerOK = FALSE;
     if(isset($_POST['register'])){
         
         // On regarde si tout les champs sont remplis, sinon, on affiche un message à l'utilisateur.
-        if($_POST['Nom'] == NULL OR $_POST['Prenom'] == NULL OR $_POST['Année_de_naissance'] == NULL OR $_POST['sexe'] == NULL OR $_POST['Localité'] == NULL OR $_POST['login'] == NULL OR $_POST['pass'] == NULL OR $_POST['pass2'] == NULL OR $_POST['email'] == NULL OR $_POST['email2'] == NULL){
+        if($_POST['Nom'] == NULL OR $_POST['Prenom'] == NULL OR $_POST['Annee_de_naissance'] == NULL OR $_POST['sexe'] == NULL OR $_POST['Localité'] == NULL OR $_POST['login'] == NULL OR $_POST['pass'] == NULL OR $_POST['pass2'] == NULL OR $_POST['email'] == NULL OR $_POST['email2'] == NULL){
             
             // On met la variable $error à TRUE pour que par la suite le navigateur sache qu'il y'a une erreur à afficher.
             $error = TRUE;
@@ -38,7 +38,7 @@ $registerOK = FALSE;
                
                   
 						// Si tout ce passe correctement, on peut maintenant l'inscrire dans la base de données :
-                        $requete = $bdd->prepare('INSERT INTO test(nom, prenom, année_de_naissance, sexe, localité, pseudo, mot de passe, email) VALUES (?, ?, ?, ?, ?, ?, ?, ?)');
+                        $requete = $bdd->prepare('INSERT INTO test(nom, prenom, annee_de_naissance, sexe, localité, pseudo, mot de passe, email) VALUES (?, ?, ?, ?, ?, ?, ?, ?)');
                         $requete = execute(array($_POST['Nom'], $_POST['Prenom'], $_POST['Année de naissance'], $_POST['sexe'], $_POST['sexe'], $_POST['Localité'], $_POST['login'], $_POST['pass'], $_POST['email']));
                            
                            
