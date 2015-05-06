@@ -15,7 +15,11 @@
 					For more features, please log inr<br>
 					If you don't own an an account, you can register for free</p>
 
-
+				<span id="tomatecerise">
+					<a href="offres.php">
+					<img src="image/tomatescerises.jpg" width="500" height="300">
+					</a>
+				</span>
 
 
 
