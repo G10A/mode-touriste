@@ -44,7 +44,7 @@
             
             			 <tr>   
             <td><label for="Nom de compte"><strong>Nickname :</strong></label></td>
-            <td><input type="Nom de compte" name="Nom de compte" id="Nom de compte"/></td>
+            <td><input type="Nom de compte" name="login" id="Nom de compte"/></td>
                </tr>
 
             <tr>
