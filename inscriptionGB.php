@@ -76,8 +76,9 @@
         <input type="submit" name="register" value="Register"/>
         
         </form>
-        <?php include("BaseGB/footerGB.php"); ?>
+        
     	</div>
+        <?php include("BaseGB/footerGB.php"); ?>
     </body>
 
 </html>
