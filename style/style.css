@@ -5,7 +5,6 @@ body {
 	overflow-x: scroll;
 }
 
-
 #banner1 {
 	margin-left: auto;
   	margin-right: auto;
@@ -162,3 +161,8 @@ footer p {
 	position: relative;
 	
 }
+#defile{ 
+width:800px; 
+margin:auto; 
+padding:10px; 
+} 

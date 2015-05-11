@@ -67,12 +67,17 @@
             
             </tr>
             
-
+            <tr>
+            <td><label for="quantité"><strong>quantité :</strong></label></td>
+            <td><input type="text" name="quantité" id="quantité"/></td>
+            
+            </tr>
 
             <tr>
        <td><label for="commentaire">commentaire</label></td>
        <td><textarea name="commentaire" id="commentaire"></textarea></td>
     	   </tr>
+           
             
             <tr>
                 <td><input type="file" name="photo" /></td>
