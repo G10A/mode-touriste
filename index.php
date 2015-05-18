@@ -30,16 +30,16 @@ $registerOK = FALSE;
                 // Si c'est bon on regarde dans la base de donnée si le nom de compte est déjà utilisé :
                 $reponse = $bdd -> query('SELECT pseudo FROM test WHERE pseudo = $_POST["login"]');
             
-               if($reponse == NULL){
+               if(empty($reponse)){
 
                		//Même chose pour l'email
                		$reponse = $bdd -> query('SELECT email FROM test WHERE email = $_POST["email"]');
-               		if($reponse == NULL){
+               		if(empty($reponse)){
                
                   
 						// Si tout ce passe correctement, on peut maintenant l'inscrire dans la base de données :
-                        $requete = $bdd->prepare('INSERT INTO test(nom, prenom, annee_de_naissance, sexe, localité, pseudo, mot de passe, email) VALUES (?, ?, ?, ?, ?, ?, ?, ?)');
-                        $requete = execute(array($_POST['Nom'], $_POST['Prenom'], $_POST['Année de naissance'], $_POST['sexe'], $_POST['sexe'], $_POST['Localite'], $_POST['login'], $_POST['pass'], $_POST['email']));
+                        $requete = $bdd->prepare('INSERT INTO test(nom, prenom, annee_de_naissance, sexe, localite, pseudo, mot de passe, email) VALUES (?, ?, ?, ?, ?, ?, ?, ?)');
+                        $requete = execute(array($_POST['Nom'], $_POST['Prenom'], $_POST['Annee_de_naissance'], $_POST['sexe'], $_POST['Localite'], $_POST['login'], $_POST['pass'], $_POST['email']));
                            
                            
                            // Si la requête s'est bien effectué :
