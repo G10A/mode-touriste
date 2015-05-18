@@ -28,7 +28,7 @@ $registerOK = FALSE;
         	if($_POST['email'] == $_POST['email2']){
                 
                 // Si c'est bon on regarde dans la base de donnée si le nom de compte est déjà utilisé :
-                $reponse = $bdd -> query('SELECT pseudo FROM test WHERE pseudo = '$_POST["login"]'');
+                $reponse = $bdd -> query('SELECT pseudo FROM test WHERE pseudo = $_POST["login"]');
             
                if(empty($reponse)){
 
