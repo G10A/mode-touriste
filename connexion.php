@@ -9,13 +9,12 @@
 	<body>
 
 		<div id="site">
-			<?php include("Base/header.php"); ?>
-			<?php include("Base/menu.php"); ?>
 
 			<?php
 
 		$bdd = new PDO('mysql:host=localhost;dbname=g10a','root','', array(PDO::ATTR_ERRMODE => PDO::ERRMODE_EXCEPTION));
 
+				$connecte = false;
 
 				//On verifie la demande de connexion
 				if(isset($_POST['connexion'])){
@@ -24,7 +23,7 @@
 					if(isset($_POST['pseudo']) && !empty($_POST['pseudo']) && isset($_POST['MDP']) && !empty($_POST['MDP'])){
 
 						//on effectue la requete
-						$req=$bdd->prepare('SELECT COUNT(pseudo) AS nombre_pseudo, pseudo, mot_de_passe FROM inscrits WHERE pseudo = ?');
+						$req=$bdd->prepare('SELECT *, COUNT(pseudo) AS nombre_pseudo FROM inscrits WHERE pseudo = ?');
 					    $req->execute(array($_POST['pseudo']));
 					    $donnees = $req->fetch();
 
@@ -34,6 +33,7 @@
 					    	//On regarde si le mot de passe est le bon
 							if($donnees['mot_de_passe'] == $_POST['MDP']){	
 
+									$connecte = true;
 									$message_final = "Vous êtes désormais connecté";
 							}
 							else{
@@ -56,9 +56,23 @@
 					}
 				}
 
-				//On affiche le message qui convient
-				echo $message_final;
 
+				//on affiche le header selon que l'utilisateur est connecté ou non.
+				if($connecte == true){
+
+					$_SESSION['pseudo'] = $_POST['pseudo'];
+
+					include("Base/header_connecte.php");
+				}
+				else{
+					include("Base/header.php");
+				}
+
+				include("Base/menu.php");
+
+
+				//On affiche le message qui convient
+				echo '<p style="text-align:center;">'.$message_final.'</p>';
 			?>
 
 
