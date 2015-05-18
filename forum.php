@@ -9,15 +9,15 @@
 
 			<div>
 					 <p style= "font:  17pt serif">
-				     <input type="submit" name="connexion"  value=" Créer un topic"/>
+				    <a href="creertopic.php"> <input type="submit" name="topic"  value=" Créer un topic"/></a>
 				    </p>
 			</div>
 
 			<div id="contenuprincipalf">
-			<h1><a href="tutoforum.php">Tutoriel pour mettre un topic</a></h1>
+			<h1><a href="tutoforum.php">Réglementation du forum</a></h1>
 			</div>
 
-
+				<div id="contenuprincipalf">
 			<?php include("Base/footer.php"); ?>
 			</div>
 
