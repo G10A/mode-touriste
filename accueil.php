@@ -27,7 +27,7 @@
 <img src="image/tomatescerises.jpg" border="0" width="600" height="374" alt= "chambre3"/> 
  
 </div> 
-</center> 
+
 
 </div>
 			<?php include("Base/footer.php"); ?>
