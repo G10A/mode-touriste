@@ -15,7 +15,7 @@
 			<h1>Déposer une offre</h1>
 
 
- <form action="traiter2.php" method="post">
+ <form action="traiter.php" method="post">
         
             <table>
             	            <tr>
@@ -33,7 +33,7 @@
 
                        <tr>
                  <td><label for="dateduproduit"><strong>Date du produit :</strong></label></td>
-            <td><input type="text" name="date_du_produit" id="dateduproduit"/></td> 
+            <td><input type="date" name="date_du_produit" id="dateduproduit"/></td> 
             </tr>
             
             <div id="fruitoulégume">
