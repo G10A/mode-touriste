@@ -17,7 +17,7 @@
 			<h1><a href="tutoforum.php">Réglementation du forum</a></h1>
 			</div>
 
-				<div id="contenuprincipalf">
+				<div >
 			<?php include("Base/footer.php"); ?>
 			</div>
 
