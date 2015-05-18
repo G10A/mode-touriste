@@ -1,7 +1,7 @@
 <?php
 	session_start();
 
-	$bdd = new PDO('mysql:host=localhost;dbname=test','root','root', array(PDO::ATTR_ERRMODE => PDO::ERRMODE_EXCEPTION));
+	$bdd = new PDO('mysql:host=localhost;dbname=test','root','', array(PDO::ATTR_ERRMODE => PDO::ERRMODE_EXCEPTION));
 
 	// On met les variables utilisé dans le code PHP à FALSE (C'est-à-dire les désactiver pour le moment).
 $error = FALSE;
@@ -11,7 +11,7 @@ $registerOK = FALSE;
     if(isset($_POST['register'])){
         
         // On regarde si tout les champs sont remplis, sinon, on affiche un message à l'utilisateur.
-        if($_POST['Nom'] == NULL OR $_POST['Prenom'] == NULL OR $_POST['Annee_de_naissance'] == NULL OR $_POST['sexe'] == NULL OR $_POST['Localité'] == NULL OR $_POST['login'] == NULL OR $_POST['pass'] == NULL OR $_POST['pass2'] == NULL OR $_POST['email'] == NULL OR $_POST['email2'] == NULL){
+        if(empty($_POST['Nom']) OR empty($_POST['Prenom']) OR empty($_POST['Annee_de_naissance']) OR empty($_POST['sexe']) OR empty($_POST['Localite']) OR empty($_POST['login']) OR empty($_POST['pass']) OR empty($_POST['pass2']) OR empty($_POST['email']) OR empty($_POST['email2'])){
             
             // On met la variable $error à TRUE pour que par la suite le navigateur sache qu'il y'a une erreur à afficher.
             $error = TRUE;
@@ -39,7 +39,7 @@ $registerOK = FALSE;
                   
 						// Si tout ce passe correctement, on peut maintenant l'inscrire dans la base de données :
                         $requete = $bdd->prepare('INSERT INTO test(nom, prenom, annee_de_naissance, sexe, localité, pseudo, mot de passe, email) VALUES (?, ?, ?, ?, ?, ?, ?, ?)');
-                        $requete = execute(array($_POST['Nom'], $_POST['Prenom'], $_POST['Année de naissance'], $_POST['sexe'], $_POST['sexe'], $_POST['Localité'], $_POST['login'], $_POST['pass'], $_POST['email']));
+                        $requete = execute(array($_POST['Nom'], $_POST['Prenom'], $_POST['Année de naissance'], $_POST['sexe'], $_POST['sexe'], $_POST['Localite'], $_POST['login'], $_POST['pass'], $_POST['email']));
                            
                            
                            // Si la requête s'est bien effectué :
