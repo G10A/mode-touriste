@@ -13,9 +13,10 @@
 			<div id="contenuprincipal">
 			
 				<p>Bonjour et bienvenue sur le site<br>
-					Vous pouvez ici déposer une offre et regarder les offres d'autres personnes<br>
-					Pour plus de fonctionnalités, il est recommandé de se connecter<br>
-					Si vous ne possédez pas de compte, vous pouvez vous inscrire</p>
+
+					Les vergers a pour but de vendre, acheter ou échanger ses fruits et/ou légumes entre particuliers<br>
+					Vous pourrez alors choisir le prix de ventes de vos produits mais aussi choisir la zone préférentielle pour vos affaires<br>
+					Si vous ne possédez pas de compte, vous pouvez vous inscrire <a href="inscription.php"> ici </a> </p>
 
     <div id="diapo">
     	<p><h3>offres récentes:</h3>  </p>
