@@ -39,7 +39,7 @@
 
 			 <tr>   
             <td><label for="Localité"><strong>Localité :</strong></label></td>
-            <td><input type="Localité" name="Localité" id="Localité"/></td>
+            <td><input type="Localité" name="Localite" id="Localité"/></td>
                </tr>
             
             			 <tr>   

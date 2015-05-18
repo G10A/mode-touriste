@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+
 <html>
 	<?php include("Base/head.php"); ?>
 	<body>
@@ -6,6 +7,7 @@
 		<div id="site">
 			<?php include("Base/header.php"); ?>
 			<?php include("Base/menu.php"); ?>
+		</div> 
 
 			<div>
 					 <p style= "font:  17pt serif">
@@ -13,13 +15,14 @@
 				    </p>
 			</div>
 
-			<div id="contenuprincipalf">
-			<h1><a href="tutoforum.php">Tutoriel pour mettre un topic</a></h1>
-			</div>
+		<div>
+			<h1>Créer un topic</h1>
+			<h2>Avant tout</h2>
 
-
+		</div>
+		
 			<?php include("Base/footer.php"); ?>
-			</div>
+		</div>
 
 	</body>
 </html>
