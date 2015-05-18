@@ -32,9 +32,7 @@
 				</div>
 
 				<div id="barrederecherche">
-                    <form action="" class="formulaire">
-                       <input class="champ" type="text" placeholder="rechercher..."/>
-                        <input class="bouton" type="button" value=" " />
+				<input type="search" placeholder="Entrez un mot-clef" name="the_search">
                      
                 </form>
                 </div>
