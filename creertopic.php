@@ -17,8 +17,8 @@
             </tr> <br><br>
 
             <tr>
-     		 <td><label for="Contenue"> <strong> Contenue : </strong></label></td>
-      		 <td><textarea name="contenue" id="contenue"></textarea></td>
+     		 <td><label for="Contenu"> <strong> Contenu : </strong></label></td>
+      		 <td><textarea name="contenu" id="contenu" rows="10" cols="50"></textarea></td>
     	   </tr>
 
     	   			<tr>
