@@ -28,12 +28,12 @@ $registerOK = FALSE;
         	if($_POST['email'] == $_POST['email2']){
                 
                 // Si c'est bon on regarde dans la base de donnée si le nom de compte est déjà utilisé :
-                $reponse = $bdd -> query('SELECT pseudo FROM test WHERE pseudo = $_POST["login"]');
+                $reponse = $bdd -> query('SELECT pseudo FROM test WHERE pseudo = "$_POST["login"]"');
             
                if(empty($reponse)){
 
                		//Même chose pour l'email
-               		$reponse = $bdd -> query('SELECT email FROM test WHERE email = $_POST["email"]');
+               		$reponse = $bdd -> query('SELECT email FROM test WHERE email = "$_POST["email"]"');
                		if(empty($reponse)){
                
                   
@@ -116,13 +116,6 @@ $registerOK = FALSE;
 
 ?>
 
-
-<?php // On affiche les erreurs :
-   if($error == TRUE){ echo $errorMSG; }
-?>
-<?php // Si l'inscription s'est bien déroulée on affiche le succès :
-   if($registerOK == TRUE){ echo $registerMSG; }
-?>
 <!DOCTYPE html>
 <html>
 	<?php include("Base/head.php"); ?>
@@ -135,10 +128,14 @@ $registerOK = FALSE;
 
 
 			<div id="contenuprincipal">
+				
+				<?php // On affiche les erreurs :
+   if($error == TRUE){ echo $errorMSG; }
+?>
+<?php // Si l'inscription s'est bien déroulée on affiche le succès :
+   if($registerOK == TRUE){ echo $registerMSG; }
+?>
 			
-
-
-
 			</div>
 
 			<?php include("Base/footer.php"); ?>
