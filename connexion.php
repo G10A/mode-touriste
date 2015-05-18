@@ -1,36 +1,67 @@
 <?php
-// on teste si le visiteur a soumis le formulaire de connexion
-if (isset($_POST['connexion']) && $_POST['connexion'] == 'Connexion') {
-	if ((isset($_POST['pseudo']) && !empty($_POST['pseudo'])) && (isset($_POST['MDP']) && !empty($_POST['MDP']))) {
-
-	new PDO('mysql:host=localhost;dbname=g10a', 'root', 'root');
-
-	// on teste si une entrée de la base contient ce couple pseudo / Mot de passe
-	$sql = 'SELECT count(*) FROM membre WHERE pseudo="'.mysql_escape_string($_POST['pseudo']).'" AND pass_md5="'.mysql_escape_string(md5($_POST['MDP'])).'"';
-	$req = mysql_query($sql) or die('Erreur SQL !<br />'.$sql.'<br />'.mysql_error());
-	$data = mysql_fetch_array($req);
-
-	mysql_free_result($req);
-	mysql_close();
-
-	// si on obtient une réponse, alors l'utilisateur est un membre
-	if ($data[0] == 1) {
-		session_start();
-		$_SESSION['pseudo'] = $_POST['pseudo'];
-		header('Location: membre.php');
-		exit();
-	}
-	// si on ne trouve aucune réponse, le visiteur s'est trompé soit dans son pseudo, soit dans son mot de passe
-	elseif ($data[0] == 0) {
-		$erreur = 'Compte non reconnu.';
-	}
-	// sinon, alors la, il y a un gros problème :)
-	else {
-		$erreur = 'Probème dans la base de données : plusieurs membres ont les mêmes identifiants de connexion.';
-	}
-	}
-	else {
-	$erreur = 'Au moins un des champs est vide.';
-	}
-}
+	session_start();
 ?>
+
+<!DOCTYPE html>
+
+<html>
+	<?php include("Base/head.php"); ?>
+	<body>
+
+		<div id="site">
+			<?php include("Base/header.php"); ?>
+			<?php include("Base/menu.php"); ?>
+
+			<?php
+
+		$bdd = new PDO('mysql:host=localhost;dbname=g10a','root','', array(PDO::ATTR_ERRMODE => PDO::ERRMODE_EXCEPTION));
+
+
+				//On verifie la demande de connexion
+				if(isset($_POST['connexion'])){
+
+					//On vérifie l'existence du pseudo et du mot de passe
+					if(isset($_POST['pseudo']) && !empty($_POST['pseudo']) && isset($_POST['MDP']) && !empty($_POST['MDP'])){
+
+						//on effectue la requete
+						$req=$bdd->prepare('SELECT COUNT(pseudo) AS nombre_pseudo, pseudo, mot_de_passe FROM inscrits WHERE pseudo = ?');
+					    $req->execute(array($_POST['pseudo']));
+					    $donnees = $req->fetch();
+
+					    //on regarde si le pseudo existe
+					    if($donnees['nombre_pseudo'] == 1){
+
+					    	//On regarde si le mot de passe est le bon
+							if($donnees['mot_de_passe'] == $_POST['MDP']){	
+
+									$message_final = "Vous êtes désormais connecté";
+							}
+							else{
+								
+								$message_final = "Votre mot de passe est invalide";
+							}
+						}
+						else{
+
+							$message_final = "Veuillez entrer un pseudo valide";
+						}
+
+						//On termine la requete
+						$req->closeCursor();
+					
+					}
+					else{
+						$message_final = "Veuillez remplir les deux champs";
+
+					}
+				}
+
+				//On affiche le message qui convient
+				echo $message_final;
+
+			?>
+
+
+
+	</body>
+</html>
