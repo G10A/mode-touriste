@@ -11,7 +11,7 @@
 
 			<div id="contenuprincipal">
 			
-				
+			Vous n'êtes pas connecté, veuillez vous connecter (et vous inscrire s'il le faut) pour acceder à cette fonctionnalité.	
 
 
 
