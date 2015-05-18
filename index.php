@@ -11,7 +11,7 @@ $registerOK = FALSE;
     if(isset($_POST['register'])){
         
         // On regarde si tout les champs sont remplis, sinon, on affiche un message à l'utilisateur.
-        if($_POST['Nom'] == NULL OR $_POST['Prenom'] == NULL OR $_POST['Annee_de_naissance'] == NULL OR $_POST['sexe'] == NULL OR $_POST['Localite'] == NULL OR $_POST['login'] == NULL OR $_POST['pass'] == NULL OR $_POST['pass2'] == NULL OR $_POST['email'] == NULL OR $_POST['email2'] == NULL){
+        if(empty($_POST['Nom']) OR empty($_POST['Prenom']) OR empty($_POST['Annee_de_naissance']) OR empty($_POST['sexe']) OR empty($_POST['Localite']) OR empty($_POST['login']) OR empty($_POST['pass']) OR empty($_POST['pass2']) OR empty($_POST['email']) OR empty($_POST['email2'])){
             
             // On met la variable $error à TRUE pour que par la suite le navigateur sache qu'il y'a une erreur à afficher.
             $error = TRUE;
