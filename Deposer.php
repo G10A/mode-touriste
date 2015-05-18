@@ -15,38 +15,38 @@
 			<h1>Déposer une offre</h1>
 
 
- <form action="index.php" method="post">
+ <form action="traiter2.php" method="post">
         
             <table>
             	            <tr>
             
-            <td><label for="Espèce"><strong>Espèce :</strong></label></td>
-            <td><input type="text" name="Espèce" id="Espèce"/></td>
+            <td><label for="Espece"><strong>Espèce :</strong></label></td>
+            <td><input type="text" name="espece" id="Espece"/></td>
             
             </tr>
 
 
                  <td><label for="zonedevente"><strong>zone de vente :</strong></label></td>
-            <td><input type="text" name="zone de vente" id="zone de vente"/></td>
+            <td><input type="text" name="zone_de_vente" id="zone de vente"/></td>
             
             </tr>
 
                        <tr>
                  <td><label for="dateduproduit"><strong>Date du produit :</strong></label></td>
-            <td><input type="date" name="dateduproduit" id="dateduproduit"/></td> 
+            <td><input type="text" name="date_du_produit" id="dateduproduit"/></td> 
             </tr>
             
             <div id="fruitoulégume">
             <p><b>fruit ou légume :</b></p>
-		    <input type="radio" name="fruitoulégume" value="légume" /> Légume<br />
-			<input type="radio" name="fruitoulégume" value="fruit" /> Fruit
+		    <input type="radio" name="fruit_ou_legume" value="legume" /> Légume<br />
+			<input type="radio" name="fruit_ou_legume" value="fruit" /> Fruit
 		</div>
 	
 		
 			<div id="venteouéchange">
 				<p><b>vente ou échange :</b></p>
-			<input type="radio" name="venteouéchange" value="vente" /> vente<br />
-			<input type="radio" name="venteouéchange" value="échange" /> échange
+			<input type="radio" name="vente_ou_echange" value="vente" /> vente<br />
+			<input type="radio" name="vente_ou_echange" value="echange" /> échange
 		</div>
 			
 		
@@ -69,7 +69,7 @@
             
             <tr>
             <td><label for="quantité"><strong>quantité :</strong></label></td>
-            <td><input type="text" name="quantité" id="quantité"/></td>
+            <td><input type="text" name="quantite" id="quantite"/></td>
             
             </tr>
 
@@ -85,7 +85,7 @@
             
             </table>
         
-        <input type="submit" name="register" value="Déposer l'offre"/>
+        <input type="submit" name="register_offer" value="Déposer l'offre"/>
         
         </form>
 
