@@ -15,7 +15,6 @@
 		$bdd = new PDO('mysql:host=localhost;dbname=test','root','', array(PDO::ATTR_ERRMODE => PDO::ERRMODE_EXCEPTION));
 
 				$connecte = false;
-				
 
 				//On verifie la demande de connexion
 				if(isset($_POST['connexion'])){
@@ -35,16 +34,16 @@
 							if($donnees['mot_de_passe'] == $_POST['MDP']){	
 
 									$connecte = true;
-									$_SESSION['message'] = "Vous etes connecte";
+									$message_erreur_connexion = "    ";
 							}
 							else{
 								
-								$_SESSION['message'] = "Votre mot de passe est invalide";
+								$message_erreur_connexion = "Votre mot de passe est invalide";
 							}
 						}
 						else{
 
-							$_SESSION['message'] = "Veuillez entrer un pseudo valide";
+							$message_erreur_connexion = "Veuillez entrer un pseudo valide";
 						}
 
 						//On termine la requete
@@ -52,32 +51,30 @@
 					
 					}
 					else{
-						$_SESSION['message'] = "Veuillez remplir les deux champs";
+						$message_erreur_connexion = "Veuillez remplir les deux champs";
 
 					}
 				}
 
 	
-				
+				$_SESSION['erreur_connexion'] = $message_erreur_connexion;
 
 				//on affiche le header selon que l'utilisateur est connecté ou non.
 				if($connecte == true){
 
 					$_SESSION['pseudo'] = $_POST['pseudo'];
 					
+
 					include("Base/header_connecte.php");
 				}
 				else{
-
 					include("Base/header_non_connecte.php");
 				}
 
 				include("Base/menu.php");
-								
-			
-				echo '<p>'.$_SESSION['message'].'</p>'; 
+				
+			?>
 
-				?>
 
 
 	</body>
