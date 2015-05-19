@@ -61,7 +61,7 @@ if(isset($_POST['register'])){
 
             $error = TRUE;
 
-            $errorMSG = 'L\'email <strong>'.$_POST[email].'<strong/> est déjà utilisée !';
+            $errorMSG = 'L\'email <strong>'.$_POST['email'].'<strong/> est déjà utilisée !';
 
             $login = $_POST['login'];
 
