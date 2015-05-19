@@ -10,11 +10,9 @@
 					<a href="inscription.php">Inscription</a>
 				</div>
 				<div id="erreur_connexion">
-					
-					<?php if(isset($_SESSION['erreur_connexion'])){ 
-					echo $_SESSION['erreur_connexion']; 
-					$_SESSION['erreur_connexion']= "   ";
-			 		} 	?>
+
+					<?php if(isset($_SESSION['erreur_connexion'])){
+						echo $_SESSION['erreur_connexion'];  } ?>
 				</div>
 				<div id="login">
 				<form method="post" action="connexion.php"> 

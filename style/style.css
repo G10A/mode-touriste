@@ -16,9 +16,10 @@ body {
 }
 
 #banner1 div#erreur_connexion{
+	
 	position: absolute;
-	margin-top: 70px;
-	margin-left: 680px
+	margin-top: 150px;
+	margin-left: 700px
 }
 #banner1 div#titre {
 	position: absolute;
