@@ -67,7 +67,7 @@ if(isset($_POST['register'])){
 
             $pass = $_POST['pass'];
 
-            $email = NULL
+            $email = NULL;
           }
                   
         }
