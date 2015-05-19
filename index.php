@@ -13,6 +13,9 @@ if(isset($_POST['register'])){
   // On regarde si tout les champs sont remplis, sinon, on affiche un message à l'utilisateur.
   if(isset($_POST['Nom']) AND isset($_POST['Prenom']) AND isset($_POST['Annee_de_naissance']) AND isset($_POST['sexe']) AND isset($_POST['Localite']) AND isset($_POST['login']) AND isset($_POST['pass']) AND isset($_POST['pass2']) AND isset($_POST['email']) AND isset($_POST['email2'])){            
         
+    //On regarde si les chaines de caractères n'excèdent pas la limite de la base de donnée.
+    if(strlen($_POST['Nom']) < 50 AND strlen($_POST['Prenom']) < 50 AND strlen($_POST['sexe']) < 50 AND strlen($_POST['Localite']) < 50 AND strlen($_POST['login']) < 50 AND strlen($_POST['pass']) < 50 AND strlen($_POST['email']) < 50 ){
+
     // Sinon, si les deux mots de passes correspondent :
     if($_POST['pass'] == $_POST['pass2']){
 
@@ -123,6 +126,16 @@ if(isset($_POST['register'])){
 
     }
 
+    }
+
+    //Sinon on affiche un message d'erreur
+    else{
+
+      $error = TRUE;
+
+      $errorMSG = 'Veuillez remplir les champs avec moins de 50 caractères (espaces compris) !';
+
+    }
   }
   
   //Sinon si tout les champs ne sont pas remplis :
