@@ -1,5 +1,6 @@
 <?php
     session_start();
+<<<<<<< HEAD
 
     $bdd = new PDO('mysql:host=localhost;dbname=test','root','', array(PDO::ATTR_ERRMODE => PDO::ERRMODE_EXCEPTION));
 
@@ -148,6 +149,8 @@ if(isset($_POST['register'])){
       
   }
 }
+=======
+>>>>>>> origin/master
 ?>
 
 <!DOCTYPE html>
@@ -156,7 +159,7 @@ if(isset($_POST['register'])){
 		<body>
 
 		<div id="site">
-			<?php include("Base/header.php"); ?>
+			<?php include("Base/header_non_connecte.php"); ?>
 			<?php include("Base/menu.php"); ?>
 
 			<div id="contenuprincipal">

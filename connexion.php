@@ -34,16 +34,16 @@
 							if($donnees['mot_de_passe'] == $_POST['MDP']){	
 
 									$connecte = true;
-									$message_final = "Vous êtes désormais connecté";
+									$message_erreur_connexion = "NULL";
 							}
 							else{
 								
-								$message_final = "Votre mot de passe est invalide";
+								$message_erreur_connexion = "Votre mot de passe est invalide";
 							}
 						}
 						else{
 
-							$message_final = "Veuillez entrer un pseudo valide";
+							$message_erreur_connexion = "Veuillez entrer un pseudo valide";
 						}
 
 						//On termine la requete
@@ -51,28 +51,28 @@
 					
 					}
 					else{
-						$message_final = "Veuillez remplir les deux champs";
+						$message_erreur_connexion = "Veuillez remplir les deux champs";
 
 					}
 				}
 
+	
+				$_SESSION['erreur_connexion'] = $message_erreur_connexion;
 
 				//on affiche le header selon que l'utilisateur est connecté ou non.
 				if($connecte == true){
 
 					$_SESSION['pseudo'] = $_POST['pseudo'];
+					
 
 					include("Base/header_connecte.php");
 				}
 				else{
-					include("Base/header.php");
+					include("Base/header_non_connecte.php");
 				}
 
 				include("Base/menu.php");
-
-
-				//On affiche le message qui convient
-				echo '<p style="text-align:center;">'.$message_final.'</p>';
+				
 			?>
 
 
