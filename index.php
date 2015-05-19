@@ -55,6 +55,20 @@ if(isset($_POST['register'])){
             }
                                                 
           }
+
+          //Sinon on affice un message d'erreur lui disant que cet email est déjà utilisé.
+          else{
+
+            $error = TRUE;
+
+            $errorMSG = 'L\'email <strong>'.$_POST[email].'<strong/> est déjà utilisée !';
+
+            $login = $_POST['login'];
+
+            $pass = $_POST['pass'];
+
+            $email = NULL
+          }
                   
         }
                
@@ -68,6 +82,8 @@ if(isset($_POST['register'])){
           $login = NULL;
                   
           $pass = $_POST['pass'];
+
+          $email = $_POST['email'];
                
         }
       }
@@ -100,6 +116,8 @@ if(isset($_POST['register'])){
         $login = $_POST['login'];
          
         $pass = NULL;
+
+        $email = $_POST['email'];
       
       }
 
