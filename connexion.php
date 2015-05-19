@@ -34,7 +34,7 @@
 							if($donnees['mot_de_passe'] == $_POST['MDP']){	
 
 									$connecte = true;
-									$message_erreur_connexion = "NULL";
+									$message_erreur_connexion = "    ";
 							}
 							else{
 								
