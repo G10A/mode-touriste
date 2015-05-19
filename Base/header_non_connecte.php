@@ -9,6 +9,9 @@
 				<div id="register">
 					<a href="inscription.php">Inscription</a>
 				</div>
+				<div id="erreur_connexion">
+					<?php echo $_SESSION['erreur_connexion'];   ?>
+				</div>
 				<div id="login">
 				<form method="post" action="connexion.php"> 
 				    <p style= "font:  17pt serif">
