@@ -1,4 +1,7 @@
-<?php session_start(); ?>
-<?php session_destroy(); ?>
+<?php session_start(); 
+
+	$_SESSION['message'] = " ";
+
+	 session_destroy(); ?>
 
 <?php include("accueil.php"); ?>

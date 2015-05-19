@@ -12,7 +12,7 @@
 					
 					</Br>
 				    </Br>
-					<?php  echo '</p> Bonjour  '.$_SESSION['pseudo'].'</p>' ?>
+					<?php  echo '<p> Bonjour  '.$_SESSION['pseudo'].'</p>' ?>
 					<a href="deconnexion.php"> Se déconnecter </a>
 
 				</div>
