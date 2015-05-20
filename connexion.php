@@ -57,7 +57,7 @@
 	
 				$_SESSION['erreur_connexion'] = $message_erreur_connexion;
 
-				//on affiche le header selon que l'utilisateur est connecté ou non.
+				//on ouvre la session si on s'est connecté.
 				if($connecte == true){
 
 					$_SESSION['pseudo'] = $_POST['pseudo'];
