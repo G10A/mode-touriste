@@ -190,7 +190,7 @@ if(isset($_POST['register'])){
             </tr>
 
                        </tr>
-                 <td><label for="Année naissance"><strong>Date de naissance :</strong></label></td>
+                 <td><label for="Année naissance"><strong>Date de naissance (aaaa-jj-mm) :</strong></label></td>
             <td><input type="date" name="Annee_de_naissance" id="Année de naissance"/></td> 
             </tr>
             

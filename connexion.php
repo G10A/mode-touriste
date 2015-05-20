@@ -1,6 +1,4 @@
-<?php
-	session_start();
-?>
+
 
 <!DOCTYPE html>
 
@@ -15,7 +13,7 @@
 		$bdd = new PDO('mysql:host=localhost;dbname=test','root','', array(PDO::ATTR_ERRMODE => PDO::ERRMODE_EXCEPTION));
 
 				$connecte = false;
-
+				$message_erreur_connexion = "          ";
 				//On verifie la demande de connexion
 				if(isset($_POST['connexion'])){
 
@@ -35,8 +33,11 @@
 
 									$connecte = true;
 
+<<<<<<< HEAD
 									$message_erreur_connexion = "NULL";
 
+=======
+>>>>>>> 60c33ffd06f6abe8008e303dd63b3de1851af1d3
 							}
 							else{
 								
@@ -65,14 +66,7 @@
 
 					$_SESSION['pseudo'] = $_POST['pseudo'];
 					
-
-					include("Base/header_connecte.php");
 				}
-				else{
-					include("Base/header_non_connecte.php");
-				}
-
-				include("Base/menu.php");
 				
 			 
 			   
