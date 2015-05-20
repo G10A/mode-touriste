@@ -36,7 +36,7 @@
             </tr>
 
                        <tr>
-                 <td><label for="dateduproduit"><strong>Date du produit :</strong></label></td>
+                 <td><label for="dateduproduit"><strong>Date du produit(aaaa-jj-mm) :</strong></label></td>
             <td><input type="date" name="date_du_produit" id="dateduproduit"/></td> 
             </tr>
             
