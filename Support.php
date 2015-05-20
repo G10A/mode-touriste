@@ -9,7 +9,6 @@
 
 		<div id="site">
 			<?php include("Base/choixheader.php"); ?>
-			<?php include("Base/menu.php"); ?>
 
 
 
