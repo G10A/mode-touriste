@@ -11,9 +11,13 @@
 
 
 
-			<div id="contenuprincipal">
-			
-			
+			<div id="contenuprincipalf">
+				<table>
+					<tr>
+				<td><a href="offrefruit.php"><h1>Fruit</h1></a></td>
+				<td><a href="offrelegume.php"><h1>Legume</h1></a></td>
+					</tr>
+				</table>
 
 
 
