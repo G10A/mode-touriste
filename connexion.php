@@ -1,9 +1,19 @@
+
+
+<!DOCTYPE html>
+
+<html>
+	<?php include("Base/head.php"); ?>
+	<body>
+
+		<div id="site">
+
 			<?php
 
 		$bdd = new PDO('mysql:host=localhost;dbname=test','root','', array(PDO::ATTR_ERRMODE => PDO::ERRMODE_EXCEPTION));
 
 				$connecte = false;
-				$message_erreur_connexion = "               ";
+				$message_erreur_connexion = "          ";
 				//On verifie la demande de connexion
 				if(isset($_POST['connexion'])){
 
@@ -47,4 +57,16 @@
 	
 				$_SESSION['erreur_connexion'] = $message_erreur_connexion;
 
+				//on affiche le header selon que l'utilisateur est connecté ou non.
+				if($connecte == true){
+
+					$_SESSION['pseudo'] = $_POST['pseudo'];
+					
+				}
+				
 			?>
+
+
+
+	</body>
+</html>
