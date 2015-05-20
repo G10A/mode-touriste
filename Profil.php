@@ -19,18 +19,32 @@
 				 ?>
 
 				 <div id="contenuprincipalprofil">
-				 Nom : 
-				<?php echo $donnees['nom'];?> </br>
-				Prénom : 
-				<?php echo $donnees['prenom'];?></br>
-				Année de naissance : 
-				<?php echo $donnees['annee_de_naissance'];?></br>
-				Genre :
-				 <?php echo $donnees['sexe'];?></br>
-				Localité : 
-				<?php echo $donnees['localite'];?></br>
-				Adresse mail : 
-				<?php echo $donnees['email'];?></br>
+            	<table>
+			 	<tr>
+				<td> Nom : </td>
+				<td><?php echo $donnees['nom'];?></td> </br>
+				</tr>
+				<tr>
+				<td>Prénom : </td>
+				<td><?php echo $donnees['prenom'];?></td></br>
+				</tr>
+				<tr>
+				<td>Année de naissance : </td>
+				<td><?php echo $donnees['annee_de_naissance'];?></td></br>
+				</tr>
+				<tr>
+				<td>Genre :</td>
+				<td> <?php echo $donnees['sexe'];?></td></br>
+				 </tr>
+				 <tr>
+				<td>Localité : </td>
+				<td><?php echo $donnees['localite'];?></td></br>
+				</tr>
+				<tr>
+				<td>Adresse mail : </td>
+				<td><?php echo $donnees['email'];?></td></br>
+				</tr>
+            	</table>
 
 
 
