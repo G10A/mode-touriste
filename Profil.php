@@ -24,7 +24,7 @@
 			<div id="contenuprincipal">
 
 			 	<section id="profil_gauche"
-			 		<<h1>Votre profil</h1>
+			 		<h1>Votre profil</h1>
 					<table>
 					 	<tr>
 						<td> Nom : </td>

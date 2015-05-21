@@ -66,8 +66,8 @@
 
 
 			
-
 			<?php include("Base/footer.php"); ?>
+			
 		</div>
 
 	</body>

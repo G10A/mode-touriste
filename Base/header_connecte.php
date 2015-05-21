@@ -11,9 +11,8 @@
 				<div id="login">
 					
 					</Br>
-				    </Br>
 					<?php  echo '<p> Bonjour  '.$_SESSION['pseudo'].'</p>' ?>
-					<a href="deconnexion.php"> Se déconnecter </a>
+					<a href="deconnexion.php" style="color:#1F0FB5 ; font-size:18px ; "> Se déconnecter </a>
 
 				</div>
 
