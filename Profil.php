@@ -5,7 +5,7 @@
 	<?php include("Base/head.php"); ?>
 	<body>
 
-		<div id="site">
+		
 			
 		<?php 
 			if(isset($_SESSION['pseudo'])){
@@ -20,10 +20,11 @@
 				$donnees = $reponse->fetch();
 		?>
 
+		<div id="site">
 			<div id="contenuprincipal">
 
 			 	<section id="profil_gauche"
-			 		<h1>Votre profil</h1>
+			 		<<h1>Votre profil</h1>
 					<table>
 					 	<tr>
 						<td> Nom : </td>
@@ -119,7 +120,7 @@
 			 
 			include("Base/footer.php"); 
 
-		?>
+			?>
 		 
 		</div>
 
