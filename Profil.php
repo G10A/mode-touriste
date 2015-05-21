@@ -18,49 +18,53 @@
 				$reponse -> execute(array($_SESSION['pseudo']));
 
 				$donnees = $reponse->fetch();
-				 ?>
+		?>
 
-				 <div id="contenuprincipalprofil">
-				 <h1>Votre profil</h1>
-            	<table>
-			 	<tr>
-				<td> Nom : </td>
-				<td><?php echo $donnees['nom'];?></td> </br>
-				</tr>
-				<tr>
-				<td>Prénom : </td>
-				<td><?php echo $donnees['prenom'];?></td></br>
-				</tr>
-				<tr>
-				<td>Année de naissance : </td>
-				<td><?php echo $donnees['annee_de_naissance'];?></td></br>
-				</tr>
-				<tr>
-				<td>Genre :</td>
-				<td> <?php echo $donnees['sexe'];?></td></br>
-				 </tr>
-				 <tr>
-				<td>Localité : </td>
-				<td><?php echo $donnees['localite'];?></td></br>
-				</tr>
-				<tr>
-				<td>Adresse mail : </td>
-				<td><?php echo $donnees['email'];?></td></br>
-				</tr>
-            	</table>
-				</div>
+			<div id="contenuprincipal">
+
+			 	<section id="profil_gauche"
+			 		<h1>Votre profil</h1>
+					<table>
+					 	<tr>
+						<td> Nom : </td>
+						<td><?php echo $donnees['nom'];?></td> </br>
+						</tr>
+						<tr>
+						<td>Prénom : </td>
+						<td><?php echo $donnees['prenom'];?></td></br>
+						</tr>
+						<tr>
+						<td>Année de naissance : </td>
+						<td><?php echo $donnees['annee_de_naissance'];?></td></br>
+						</tr>
+						<tr>
+						<td>Genre :</td>
+						<td> <?php echo $donnees['sexe'];?></td></br>
+						 </tr>
+						 <tr>
+						<td>Localité : </td>
+						<td><?php echo $donnees['localite'];?></td></br>
+						</tr>
+						<tr>
+						<td>Adresse mail : </td>
+						<td><?php echo $donnees['email'];?></td></br>
+						</tr>
+    				</table>
+				</section>
 
 			
-				<h1>Vos offres</h1>
+				
 
-				<?php 
-					$reponse = $bdd-> prepare('SELECT * FROM offre WHERE  pseudo = ?');
-				 	$reponse -> execute(array($_SESSION['pseudo']));
-				 	while ($donnees = $reponse->fetch())
-					{ 
-				?>
+		<?php 
+			$reponse = $bdd-> prepare('SELECT * FROM offre WHERE  pseudo = ?');
+		 	$reponse -> execute(array($_SESSION['pseudo']));
+		 	while ($donnees = $reponse->fetch())
+			{ 
+		?>
 
-				<div id="contenuprincipal">
+
+				<section id="profil_droit">
+					<h1>Vos offres</h1>
 					<table>
 					 	<tr>
 						<td> Espèce: </td>
@@ -99,8 +103,11 @@
 						<td><?php echo $donnees['commentaire'];?></td></br>
 						</tr>
             		</table>
-            	</div>
-            	<?php } 
+            	</section>
+
+	        </div>
+            <?php 
+        		} 
 
 			}
 			else{
@@ -112,7 +119,7 @@
 			 
 			include("Base/footer.php"); 
 
-		 ?>
+		?>
 		 
 		</div>
 

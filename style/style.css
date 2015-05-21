@@ -168,7 +168,29 @@ body {
 	margin: auto;
 }
 
+#contenuprincipal section#profil_gauche {
 
+	position: relative;
+	margin: 40px;
+	border-color: green;
+	text-align: center;
+	width: 410px;
+	height: 400px;
+	background-color: #EDC965;
+	font-size: 1.3em;
+}
+
+#contenuprincipal section#profil_droit {
+
+	position: relative;
+	margin: 20px;
+	border-color: green;
+	text-align: center;
+	width: 450px;
+	height: 450px;
+	background-color: #EDC965;
+	
+}
 
 
 footer {
@@ -228,3 +250,4 @@ padding:10px;
     top: 0;
     border: 1px solid #333;
 }
+
