@@ -36,8 +36,8 @@
 			$pseudo = htmlspecialchars($_SESSION['pseudo']);
 
 
-			$req=$bdd->prepare('INSERT INTO offre(espece, zone_de_vente, date_du_produit, poids, prix, provenance, quantite, fruit_ou_legume, vente_ou_echange, commentaire,pseudo) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?,?)');
-			$req->execute(array($espece, $zone_de_vente, $date_du_produit, $poids, $prix, $provenance, $quantite, $fruit_ou_legume, $vente_ou_echange, $commentaire,$pseudo));
+			$req=$bdd->prepare('INSERT INTO offre(espece, zone_de_vente, date_du_produit, poids, prix, provenance, quantite, fruit_ou_legume, vente_ou_echange, commentaire, pseudo) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)');
+			$req->execute(array($espece, $zone_de_vente, $date_du_produit, $poids, $prix, $provenance, $quantite, $fruit_ou_legume, $vente_ou_echange, $commentaire, $pseudo));
 
 			$message_right = "votre offre a bien été déposée";
 			echo $message_right;
