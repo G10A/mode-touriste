@@ -1,7 +1,7 @@
 body {
 	overflow-x: hidden;
 	margin: 0;
-	background:  #66b6fc;
+	background:  #C7C34F;
 	overflow-x: scroll;
 }
 
@@ -12,7 +12,8 @@ body {
 	background-color: white ;
 	height: 104px;
 	width: 1100px;
-	
+	background-image: url("https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSP7ieZHsJQtx-FtVBFeFufv2qmdjEWDGg37OJvTr8hVlyYbFbf");
+	opacity:0.8;
 }
 
 #banner1 div#erreur_connexion{
@@ -172,25 +173,30 @@ body {
 
 	position: relative;
 	margin: 40px;
-	border-color: green;
-	text-align: center;
+	border: 2px dotted black;
 	width: 410px;
 	height: 400px;
-	background-color: #EDC965;
+	background-color: #D5E896;
 	font-size: 1.3em;
+	float: left;
+	border-radius: 5%;
 }
 
 #contenuprincipal section#profil_droit {
 
 	position: relative;
-	margin: 20px;
-	border-color: green;
-	text-align: center;
-	width: 450px;
-	height: 450px;
-	background-color: #EDC965;
-	
+	margin: 40px;
+	border: 2px dotted black;
+	width: 410px;
+	height: 400px;
+	background-color: #D5E896;	
+	float: right;
+	font-size: 1.3em;
+	border-radius: 5%;
 }
+
+
+
 
 
 footer {
@@ -251,3 +257,23 @@ padding:10px;
     border: 1px solid #333;
 }
 
+#deconnexion{
+
+	color: blue;
+	text-decoration: none;
+	font-size: 18px;
+	font-weight: bold;
+}
+
+#deconnexion:hover{
+
+	color: #D9011E;
+	text-decoration: underline;
+}
+
+#formulaire{
+
+	background-color: #D5E896;
+	border: 2px dotted black;
+	border-radius: 4%;
+}

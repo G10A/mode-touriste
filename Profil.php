@@ -9,11 +9,11 @@
 			
 		<?php 
 			if(isset($_SESSION['pseudo'])){
+
+				 include("Base/choixheader.php");
 				
 				$bdd = new PDO('mysql:host=localhost;dbname=test','root','', array(PDO::ATTR_ERRMODE => PDO::ERRMODE_EXCEPTION));
-
-				include("Base/header_connecte.php");
-				include("Base/menu.php");
+ 
 				$reponse = $bdd->prepare('SELECT * FROM inscrits WHERE pseudo = ?');
 				$reponse -> execute(array($_SESSION['pseudo']));
 
@@ -21,6 +21,7 @@
 		?>
 
 		<div id="site">
+
 			<div id="contenuprincipal">
 
 			 	<section id="profil_gauche"

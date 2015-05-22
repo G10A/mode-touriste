@@ -22,6 +22,7 @@
                 if(isset($_SESSION['pseudo'])){
             ?>
 
+            <fieldset id="formulaire">
             <form action="traiter.php" method="post">
         
                 <table>
@@ -88,6 +89,7 @@
                 <input type="submit" name="register_offer" value="Déposer l'offre"/>
         
             </form>
+            </fieldset>
 
             <?php
                 }

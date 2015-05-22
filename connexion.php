@@ -6,7 +6,7 @@
 	<?php include("Base/head.php"); ?>
 	<body>
 
-		<div id="site">
+		
 
 			<?php
 
