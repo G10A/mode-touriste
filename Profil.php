@@ -65,9 +65,9 @@
 		?>
 
 
-				<section id="profil_droit">
-					<h1>Vos offres</h1>
-					<table>
+				<section>
+					
+					<table id="profil_droit">
 					 	<tr>
 						<td> Espèce: </td>
 						<td><?php echo $donnees['espece'];?></td> </br>

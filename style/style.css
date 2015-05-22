@@ -182,7 +182,7 @@ body {
 	border-radius: 5%;
 }
 
-#contenuprincipal section#profil_droit {
+#contenuprincipal table#profil_droit {
 
 	position: relative;
 	margin: 40px;
