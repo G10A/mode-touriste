@@ -108,7 +108,6 @@
             	</section>
 
 	        </div>
-	        				<?php include("Base/footer.php"); ?>
             <?php 
         		} 
 
