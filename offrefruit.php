@@ -8,7 +8,8 @@
 		<div id="site">
 			<?php include("Base/choixheader.php");
 			$bdd = new PDO('mysql:host=localhost;dbname=test','root','', array(PDO::ATTR_ERRMODE => PDO::ERRMODE_EXCEPTION)); 
-			$reponse = $bdd->query('SELECT * FROM offre WHERE fruit_ou_legume=\'fruit\' ');
+			$reponse = $bdd->prepare('SELECT * FROM offre WHERE fruit_ou_legume= ?');
+			$reponse -> execute((array('fruit')))
 				 ?>
 
 
@@ -67,7 +68,7 @@
 
 			
 			<?php include("Base/footer.php"); ?>
-			
+
 		</div>
 
 	</body>
