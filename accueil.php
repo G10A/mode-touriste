@@ -12,7 +12,18 @@
       <?php include("Base/choixheader.php"); ?>
 
 
+                  <?php
+                if(isset($_SESSION['pseudo'])){
+            ?><div id="contenuprincipal">
+      
+        <p>Bonjour et bienvenue sur le site<br>
 
+          Les vergers a pour but de vendre, acheter ou échanger ses fruits et/ou légumes entre particuliers<br>
+          Vous pourrez alors choisir le prix de ventes de vos produits mais aussi choisir la zone préférentielle pour vos affaires<br>
+
+                        <?php
+                }
+                else{ ?>
 			<div id="contenuprincipal">
 			
 				<p>Bonjour et bienvenue sur le site<br>
@@ -20,6 +31,7 @@
 					Les vergers a pour but de vendre, acheter ou échanger ses fruits et/ou légumes entre particuliers<br>
 					Vous pourrez alors choisir le prix de ventes de vos produits mais aussi choisir la zone préférentielle pour vos affaires<br>
 					Si vous ne possédez pas de compte, vous pouvez vous inscrire <a href="inscription.php"> ici </a> </p>
+          <?php } ?>
 
     <div id="diapo">
     	<p><h3>offres récentes:</h3>  </p>
