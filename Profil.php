@@ -20,10 +20,8 @@
 				$donnees = $reponse->fetch();
 		?>
 
-		<div id="site">
 
-			<div id="contenuprincipal">
-
+			<div id="profil">
 			 	<section id="profil_gauche"
 			 		<h1>Votre profil</h1>
 					<table>
@@ -60,14 +58,16 @@
 		<?php 
 			$reponse = $bdd-> prepare('SELECT * FROM offre WHERE  pseudo = ?');
 		 	$reponse -> execute(array($_SESSION['pseudo']));
-		 	while ($donnees = $reponse->fetch())
-			{ 
+		 	 
 		?>
 
 
-				<section>
+				<section id="profil_droit">
+		<?php while ($donnees = $reponse->fetch()) 
+			{  
+		?>
 					
-					<table id="profil_droit">
+					<table id="offre">
 					 	<tr>
 						<td> Espèce: </td>
 						<td><?php echo $donnees['espece'];?></td> </br>
@@ -106,8 +106,8 @@
 						</tr>
             		</table>
             	</section>
-
-	        </div>
+            </div>
+	        
             <?php 
         		} 
 
@@ -123,7 +123,6 @@
 
 			?>
 		 
-		</div>
 
 	</body>
 </html>
