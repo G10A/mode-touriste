@@ -20,7 +20,7 @@
 				$donnees = $reponse->fetch();
 		?>
 
-
+<div id="contenuprincipal">
 			<div id="profil">
 			 	<section id="profil_gauche"
 			 		<h1>Votre profil</h1>
@@ -107,7 +107,7 @@
             		</table>
             	</section>
             </div>
-	        
+	        </div>
             <?php 
         		} 
 
