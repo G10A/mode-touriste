@@ -18,7 +18,7 @@
 				<?php while ($donnees = $reponse->fetch())
 				{ ?>
 				<div id="contenuprincipal">
-				            	<table>
+				            	<table id="offre">
 			 	<tr>
 				<td> Espèce: </td>
 				<td><?php echo $donnees['espece'];?></td> </br>
