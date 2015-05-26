@@ -10,6 +10,7 @@
 			$bdd = new PDO('mysql:host=localhost;dbname=test','root','', array(PDO::ATTR_ERRMODE => PDO::ERRMODE_EXCEPTION)); 
 			$reponse = $bdd->prepare('SELECT * FROM offre WHERE fruit_ou_legume= ?');
 			$reponse -> execute((array('fruit')))
+
 				 ?>
 
 
@@ -54,6 +55,13 @@
 				</tr>
 				<td>Commentaire : </td>
 				<td><?php echo $donnees['commentaire'];?></td></br>
+				</tr>
+				<tr>
+					<td>Contacter le vendeur :<?php 
+									$repons = $bdd->prepare('SELECT * FROM inscrits WHERE pseudo=? ');
+									$repons -> execute(array($donnees['pseudo']));
+									$donne = $repons->fetch();
+									echo $donne['email'];?></td>
 				</tr>
             	</table>
             	</div>
