@@ -20,11 +20,11 @@
 				$donnees = $reponse->fetch();
 		?>
 
-<div id="contenuprincipal">
-			<div id="profil">
-			 	<section id="profil_gauche"
+
+				<div id="profil">
+
 			 		<h1>Votre profil</h1>
-					<table>
+					<table id="offre">
 					 	<tr>
 						<td> Nom : </td>
 						<td><?php echo $donnees['nom'];?></td> </br>
@@ -50,7 +50,8 @@
 						<td><?php echo $donnees['email'];?></td></br>
 						</tr>
     				</table>
-				</section>
+    				<div>
+
 
 			
 				
@@ -62,11 +63,11 @@
 		?>
 
 
-				<section id="profil_droit">
+			<h1>Vos offres</h1>
 		<?php while ($donnees = $reponse->fetch()) 
 			{  
 		?>
-					
+					<div>
 					<table id="offre">
 					 	<tr>
 						<td> Espèce: </td>
@@ -105,9 +106,10 @@
 						<td><?php echo $donnees['commentaire'];?></td></br>
 						</tr>
             		</table>
-            	</section>
-            </div>
-	        </div>
+            		<div>
+
+          
+	   
             <?php 
         		} 
 
