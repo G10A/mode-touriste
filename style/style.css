@@ -1,9 +1,24 @@
 body {
 	overflow-x: hidden;
 	margin: 0;
-	background:  #C7C34F;
+	background-image: url("https://static.maximumwallhd.com/fr/fond-ecran/nature/42622-trees-sky-herbs-sunrise-clouds.jpg");
+	background-attachment: fixed;
 	overflow-x: scroll;
 }
+
+/*   */
+/*  http://www.fantom-xp.com/wallpapers/29/Nature_Mysterys.jpg */
+/* http://thumbs.dreamstime.com/z/bulles-vertes-de-fond-de-nature-13978833.jpg */
+/* https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTGEHnxqizqqzVpLS7B2dSsa3lYhVAIKO4H8vX6me8EiCOpPhUXfg */
+/* http://www.google.fr/url?source=imglanding&ct=img&q=http://www.favorisxp.com/fond-ecran-vista/fond-ecran-vista-macro-palme-verte.jpg&sa=X&ei=HDhmVZqfL8L2UIGkgMAM&ved=0CAkQ8wc4GA&usg=AFQjCNFYmTjVdadyt93UmEDytuLkeBYWKA */
+
+
+/*  https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSP7ieZHsJQtx-FtVBFeFufv2qmdjEWDGg37OJvTr8hVlyYbFbf   URL du fond de la baniere */
+
+#site {
+
+}
+
 
 #banner1 {
 	margin-left: auto;
@@ -11,9 +26,8 @@ body {
 	display: block;
 	background-color: white ;
 	height: 104px;
-	width: 1100px;
-	background-image: url("https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSP7ieZHsJQtx-FtVBFeFufv2qmdjEWDGg37OJvTr8hVlyYbFbf");
-	opacity:0.8;
+	padding-left: 150px;
+	
 }
 
 #banner1 div#erreur_connexion{
@@ -77,8 +91,7 @@ body {
 
 
 #menu {
-	margin-left: auto;
-  	margin-right: auto;
+	margin: auto;
 	width: 1100px;
 	height:40px;
 	position: relative;
@@ -94,10 +107,11 @@ body {
 
 #menu ul li {
 
-	border-right: 1px solid #000;
+	border-right: 1px solid black;
 	display: inline-block;
 	list-style-type: none;
-	
+	background-color: black;
+
 }
 
 #menu ul li a {
@@ -107,10 +121,9 @@ body {
 	display: inline-block;
 	height: 30px;
 	width: 182.3px;
-	color: black;
+	color: white;
 	text-decoration: none;
-	background:-moz-linear-gradient(top, #fc3e0f 0%, #ff670f 28%, #f9490e 52%, #ff670f 71%, #ff670f 83%, #ff330f 100%);
-	background:-webkit-linear-gradient(top, #fc3e0f 0%, #ff670f 28%, #f9490e 52%, #ff670f 71%, #ff670f 83%, #ff330f 100%);
+
 }
 
 #menu ul li a:hover {
@@ -138,15 +151,14 @@ body {
 }
 
 #deposeruneoffre{
-	min-height: 500px;
-	display: block;
-	width: 1100px;
+
 	
 }
 
 #deposeruneoffre h1 {
 
 	margin-left: 260px;
+	width: 260px;
 }
 
 #formulaire{
@@ -155,13 +167,22 @@ body {
 	border: 2px dotted black;
 	border-radius: 4%;
 	width: 500px;
-	margin-left: 150px;
+	margin-left: 140px;
+	display: inline-block;
 		
 }
 
 #div_photo{
 
-	margin-left: 200px;
+	margin-left: 55px;
+	margin-bottom: 100px;
+	display: inline-block;
+	min-height: 300px;
+	max-height: 400px;
+	min-width: 300px;
+	max-width: 400px;
+
+
 }
 
 #contenuprincipalf {
