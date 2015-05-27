@@ -81,13 +81,13 @@
                     </tr>
                 
                     <tr>
-                        <td><label for="quantité"><strong>quantité : avant c'était : </strong></label></td>
+                        <td><label for="quantité"><strong>quantité : </strong></label></td>
                         <td><input type="text" name="quantite" id="quantite" value="<?php echo $donnees['quantite'] ?>"/></td> 
                     </tr>
 
                     <tr>
-                        <td><label for="commentaire">commentaire : avant c'était : </label></td>
-                        <td><textarea name="commentaire" id="commentaire" value="<?php echo $donnees['commentaire'] ?>"></textarea></td>
+                        <td><label for="commentaire">commentaire : </label></td>
+                        <td><textarea name="commentaire" id="commentaire" ><?php echo $donnees['commentaire'] ?></textarea></td>
         	        </tr>
                
                 
