@@ -106,7 +106,8 @@
 						<td><?php echo $donnees['commentaire'];?></td></br>
 						</tr>
 						<tr>
-						<td> <a href="modifieoffre.php">Modifier l'offre</a></td>
+
+						<td> <a href="modifieoffre.php?$offre=<?php echo $donnees['ID']?>">Modifier l'offre</a></td>
 						</tr>
             		</table>
             		<div>
