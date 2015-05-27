@@ -22,6 +22,8 @@
                 if(isset($_SESSION['pseudo'])){
             ?>
 
+            
+
             <fieldset id="formulaire">
             <form enctype="multipart/form-data" action="traiter.php" method="post">
         
@@ -81,7 +83,7 @@
                
                 
                     <tr>
-                        <td><input type="file" name="photo" /></td>
+                        <td><input id="input_photo" type="file" name="photo" /></td>
                     </tr>
                 
                 </table>
@@ -99,13 +101,18 @@
             ?>
 
 					
-
+            <div id="div_photo"> </div>
 
 
 			</div>
 
 			<?php include("Base/footer.php"); ?>
-		</div>
+		    </div>
+
+
+        
+        <script src="javascript/preview_photo.js"></script>
+
 
 	</body>
 </html>
