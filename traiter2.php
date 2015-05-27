@@ -34,25 +34,11 @@
 			$quantite = htmlspecialchars($_POST['quantite']);
 			$commentaire = htmlspecialchars($_POST['commentaire']);
 			$pseudo = htmlspecialchars($_SESSION['pseudo']);
-
-
+			$offre = htmlspecialchars($_POST['idoffre']);
 
 			
-			$req=$bdd->exec('UPDATE offre SET espece= espece1, zone_de_vente= zone_de_vente1, date_du_produit= date_du_produit1, poids=poids1, prix=prix1, provenance=provenance1, quantite=quantite1, fruit_ou_legume=fruit_ou_legume1, vente_ou_echange=vente_ou_echange1, commentaire= commentaire1, pseudo=pseudo1 WHERE ID=10');
-			$req->execute(array(
-	'espece1' => $espece,
-	'zone_de_vente1' => $zone_de_vente,
-	'date_du_produit1' => $date_du_produit,
-	'poids1'=> $poids,
-	'prix1'=>$poids,
-	'provenance1'=>$provenance,
-	'quantite1'=>$quantite,
-	'fruit_ou_legume1'=> $fruit_ou_legume,
-	'vente_ou_echange1'=>$vente_ou_echange,
-	'commentaire1'=>$commentaire,
-	'pseudo1'=>$pseudo
+			$req=$bdd->exec( "UPDATE offre SET espece='".$espece."', zone_de_vente= '".$zone_de_vente."', date_du_produit= '".$date_du_produit."', poids='".$poids."', prix='".$prix."', provenance='".$provenance."', quantite='".$quantite."', fruit_ou_legume='".$fruit_ou_legume."', vente_ou_echange='".$vente_ou_echange."', commentaire= '".$commentaire."', pseudo='".$pseudo."' WHERE ID='".$offre."'");
 
-	));
 			$message_right = "votre offre a bien été modifié";
 			echo $message_right;
 			}

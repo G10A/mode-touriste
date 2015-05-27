@@ -20,6 +20,7 @@
                 $reponse = $bdd->prepare('SELECT * FROM offre WHERE pseudo= ? AND id=?');
                 $reponse -> execute(array($_SESSION['pseudo'],$_GET['$offre']));
                 $donnees = $reponse->fetch();
+
                 ?>
 
 			<div id="deposeruneoffre">
@@ -32,28 +33,28 @@
 
             <fieldset id="formulaire">
             <form action="traiter2.php" method="post">
-        
+            <input type="hidden" name="idoffre" value="<?php echo $_GET['$offre'] ?>"/></input>
                 <table>
                     <tr>         
-                        <td><label for="poids"><strong>Espèce : avant c'était :<?php echo $donnees['espece'];?></strong></label></td>
-                        <td><input type="text" name="espece" id="Espece"/></td>
+                        <td><label for="poids"><strong>Espèce :</strong></label></td>
+                        <td><input type="text" name="espece" id="Espece" value="<?php echo $donnees['espece'];?>"/></td>
                         
                     </tr>
 
                     <tr>
-                        <td><label for="poids"><strong>Zone de vente : avant c'était :<?php echo $donnees['zone_de_vente'];?></strong></label></td>
-                        <td><input type="text" name="zone_de_vente" id="zone de vente"/>
+                        <td><label for="poids"><strong>Zone de vente </strong></label></td>
+                        <td><input type="text" name="zone_de_vente" id="zone de vente" value="<?php echo $donnees['zone_de_vente'];?>"/>
                             
                     </tr>
 
                     <tr>
-                       <td><label for="poids"><strong>Date du produit : avant c'était :<?php echo $donnees['date_du_produit'];?></strong></label></td>
-                        <td><input type="date" name="date_du_produit" id="dateduproduit"/></td> 
+                       <td><label for="poids"><strong>Date du produit :</strong></label></td>
+                        <td><input type="date" name="date_du_produit" id="dateduproduit" value="<?php echo $donnees['date_du_produit'];?>"/></td> 
                     </tr>
                 
                     <div id="fruitoulégume">
-                        <p><b>Fruit ou légume :avant c'était :<?php echo $donnees['fruit_ou_legume'] ?></b></p>
-    		            <input type="radio" name="fruit_ou_legume" value="legume" /> Légume<br />
+                        <p><b>Fruit ou légume :avant c'était : <?php echo $donnees['fruit_ou_legume'] ?></b></p>
+    		            <input type="radio" name="fruit_ou_legume" value="legume"/> Légume<br />
     			        <input type="radio" name="fruit_ou_legume" value="fruit" /> Fruit
     		        </div>
     	
@@ -65,28 +66,28 @@
     		        </div>
     			
     			    <tr>   
-                        <td><label for="poids"><strong>poids (kg) : avant c'était : <?php echo $donnees['poids'] ?></strong></label></td>
-                        <td><input type="text" name="poids" id="poids"/></td>
+                        <td><label for="poids"><strong>poids (kg) :  </strong></label></td>
+                        <td><input type="text" name="poids" id="poids" value="<?php echo $donnees['poids'] ?>"/></td>
                     </tr>
                 
                 	<tr>   
-                        <td><label for="prix"><strong>prix (euros) : avant c'était :<?php echo $donnees['prix'] ?></strong></label></td>
-                        <td><input type="text" name="prix" id="prix"/></td>
+                        <td><label for="prix"><strong>prix (euros) : avant c'était :</strong></label></td>
+                        <td><input type="text" name="prix" id="prix" value="<?php echo $donnees['prix'] ?>"/></td>
                     </tr>
 
                     <tr>
-                        <td><label for="provenance"><strong>provenance : avant c'etait : <?php echo $donnees['provenance'] ?></strong></label></td>
-                        <td><input type="text" name="provenance" id="provenance"/></td> 
+                        <td><label for="provenance"><strong>provenance : </strong></label></td>
+                        <td><input type="text" name="provenance" id="provenance" value="<?php echo $donnees['provenance'] ?>"/></td> 
                     </tr>
                 
                     <tr>
-                        <td><label for="quantité"><strong>quantité : avant c'était : <?php echo $donnees['quantite'] ?></strong></label></td>
-                        <td><input type="text" name="quantite" id="quantite"/></td> 
+                        <td><label for="quantité"><strong>quantité : avant c'était : </strong></label></td>
+                        <td><input type="text" name="quantite" id="quantite" value="<?php echo $donnees['quantite'] ?>"/></td> 
                     </tr>
 
                     <tr>
-                        <td><label for="commentaire">commentaire : avant c'était : <?php echo $donnees['commentaire'] ?></label></td>
-                        <td><textarea name="commentaire" id="commentaire"></textarea></td>
+                        <td><label for="commentaire">commentaire : avant c'était : </label></td>
+                        <td><textarea name="commentaire" id="commentaire" value="<?php echo $donnees['commentaire'] ?>"></textarea></td>
         	        </tr>
                
                 
