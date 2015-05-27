@@ -49,6 +49,9 @@
 						<td>Adresse mail : </td>
 						<td><?php echo $donnees['email'];?></td></br>
 						</tr>
+						<tr>
+						<td> <a href="modifieprofil.php?$offre=<?php echo $donnees['pseudo']?>">Modifier son profil</a></td>
+					</tr>
     				</table>
     				<div>
 
