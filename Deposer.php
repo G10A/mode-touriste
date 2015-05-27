@@ -23,7 +23,7 @@
             ?>
 
             <fieldset id="formulaire">
-            <form action="traiter.php" method="post">
+            <form enctype="multipart/form-data" action="traiter.php" method="post">
         
                 <table>
                     <tr>         
