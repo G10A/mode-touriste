@@ -9,20 +9,14 @@
 			<?php include("Base/choixheader.php"); ?>
 
 
+			<table id="lien_offre">
+				<tr>
+					<td><p><a href="offrelegume.php">Les Légumes</a></p></td>
+					<td><p><a href="offrefruit.php">Les Fruits</a></p></td>	
+				</tr>
+			</table>
 
-
-			<div id="contenuprincipalf">
-				<table>
-					<tr>
-				<td><a href="offrefruit.php"><h1>Fruit</h1></a></td>
-				<td><a href="offrelegume.php"><h1>Legume</h1></a></td>
-					</tr>
-				</table>
-
-
-
-
-			</div>
+		</div>
 
 			<?php include("Base/footer.php"); ?>
 		</div>
