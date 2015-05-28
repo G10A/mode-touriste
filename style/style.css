@@ -23,9 +23,7 @@ body {
 
 
 #banner1 {
-	margin-left: auto;
-  	margin-right: auto;
-	display: block;
+
 	background-color: white ;
 	height: 100px;
 	padding-left: 150px;
@@ -128,13 +126,6 @@ body {
 	font-style: italic;
 
 }
-
-#menu ul li a:hover {
-	
-	color: white;
-}
-
-
 
 #contenuprincipal {
 	min-height: 500px;

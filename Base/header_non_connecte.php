@@ -40,13 +40,17 @@
 				</div>
 
 				
-				<p id="titre">Les Vergers</p>
+				<div id="titre">
+					<p>Les Vergers</p>
+				</div>
 				
 
 				
-					<form id="barre_de_recherche" method="post">
-					<input type="search" placeholder="Entrez un mot-clef" name="the_search">                    
-                	</form>
+				<div id="barrederecherche">
+					<form>
+						<input type="search" placeholder="Entrez un mot-clef" name="the_search">                    
+	                </form>
+                </div>
                 
 
 			</div>
