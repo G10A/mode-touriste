@@ -21,7 +21,7 @@
 				</div>
 
 				<div id="login">
-				<form method="post"> 
+				<form method="post" action="accueil.php"> 
 				    <p style= "font:  17pt serif">
 				        <input type="text" name="pseudo" id="pseudo" placeholder="pseudo" size="20" maxlength="50"  /><br>
 				        <input type="password" name="MDP" id="MDP" placeholder="mot de passe" size="20" /><br>

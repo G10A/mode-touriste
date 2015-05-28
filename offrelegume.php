@@ -9,16 +9,21 @@
 			<?php include("Base/choixheader.php"); 
 
 			$bdd = new PDO('mysql:host=localhost;dbname=test','root','', array(PDO::ATTR_ERRMODE => PDO::ERRMODE_EXCEPTION)); 
-			$reponse = $bdd->query('SELECT * FROM offre WHERE fruit_ou_legume=\'legume\' ');
+			$reponse = $bdd->prepare('SELECT * FROM offre WHERE fruit_ou_legume=?');
+			$reponse -> execute(array('legume'));
 				 ?>
 
 
+				 <p class="lien_produit"><a href="offrefruit.php">Les Fruits</a></p>
 
+				<section class="offre_fruit_legume">
+					<h1>Les offres de légumes</h1>
 							
 				<?php while ($donnees = $reponse->fetch())
 				{ ?>
-				<div id="contenuprincipal">
-				            	<table id="offre">
+				
+				<fieldset class="offre">
+				<table>
 			 	<tr>
 				<td> Espèce: </td>
 				<td><?php echo $donnees['espece'];?></td> </br>
@@ -55,17 +60,22 @@
 				<td>Commentaire : </td>
 				<td><?php echo $donnees['commentaire'];?></td></br>
 				</tr>
-							<tr>
-					<td>Contacter le vendeur :<?php 
-									$repons = $bdd->prepare('SELECT * FROM inscrits WHERE pseudo=? ');
-									$repons -> execute(array($donnees['pseudo']));
-									$donne = $repons->fetch();
-									echo $donne['email'];?></td>
+				<tr>
+				<td>Contacter le vendeur : </td>
+											<?php 
+											$repons = $bdd->prepare('SELECT * FROM inscrits WHERE pseudo=? ');
+											$repons -> execute(array($donnees['pseudo']));
+											$donne = $repons->fetch(); ?>
+				<td><?php echo $donne['email']; ?></td>
 				</tr>
 
             	</table>
-            	</div>
+            	</fieldset>
+
+            	
             	<?php } ?>
+
+            	</section>	
 
 			<?php include("Base/footer.php"); ?>
 		</div>

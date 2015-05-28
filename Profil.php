@@ -70,7 +70,7 @@
 		 	 
 		?>
 
-				<section id="profil_offre">
+				<section class="profil_offre">
 					<h1>Mes offres</h1>
 
 		<?php while ($donnees = $reponse->fetch()) 

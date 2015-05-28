@@ -41,11 +41,6 @@
                 </div>
 
                 <form enctype="multipart/form-data" action="traiter.php" method="post">
-
-                
-
-                
-        
                 <table>
                     <tr>         
                         <td><label for="Espece"><strong>Espèce :</strong></label></td>

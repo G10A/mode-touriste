@@ -153,7 +153,7 @@ body {
 
 #deposeruneoffre{
 
-
+	margin-bottom: 30px
 }
 
 #deposeruneoffre h1 {
@@ -261,13 +261,13 @@ body {
 	text-decoration: underline;
 }
 
-#profil_offre {
+.profil_offre {
 	width: 525px;	
 	display: inline-block;
 	margin-left: 675px;
 }
 
-#profil_offre h1 {
+.profil_offre h1, .offre_fruit_legume h1 {
 	text-align: center;
 	width: 300px;
 	margin: auto;
@@ -279,7 +279,9 @@ body {
 
 	border: 2px dotted black;
 	width: 450px;
-	height: 400px;
+	max-width: 450px;
+	min-height: 400px;
+	max-height: 500px;
 	background-color: #D5E896;	
 	font-size: 1.3em;
 	border-radius: 5%;	
@@ -291,7 +293,7 @@ body {
 .offre table{
 	margin: auto;
 	margin-top: -245px;
-	margin-right: 35px;
+	margin-right: 90px;
 }
 
 .offre td{
@@ -302,8 +304,33 @@ body {
 }
 
 
+.offre_fruit_legume {
 
+	width: 525px;	
+	margin-left: 450px;
+	min-height: 520px;	
+	display: inline-block;
+	vertical-align: top;
+}
 
+.offre_fruit_legume table{
+
+	margin-right: 10px;
+
+}
+
+.lien_produit {
+
+	display: inline-block;
+	margin-left: 200px;
+	margin-top: 150px;
+	font-size: 35px;
+	position: fixed;
+}
+
+.lien_produit a hover {
+	color: black;
+}
 
 #titre {
 	text-align: center;
@@ -311,13 +338,12 @@ body {
 
 footer {
 	padding-bottom: 0px;
-	margin-left: auto;
-	margin-right: auto;
+	margin-left: 115px;
 	text-align: center;
-	display: block;
 	background-color: pink;
 	height: 60px;
 	width: 1100px;
+	position: absolute;
 }
 
 footer p {
