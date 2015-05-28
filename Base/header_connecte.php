@@ -8,12 +8,10 @@
 				</span>
 				</div>
 				
-				<div id="login">
-					
+				<div id="login">					
 					</Br>
-					<?php  echo '<p> Bonjour  '.$_SESSION['pseudo'].'</p>' ?>
+					<?php  echo '<p> Bonjour '.$_SESSION['pseudo'].'</p>'?>
 					<a href="deconnexion.php" id="deconnexion"> Se déconnecter </a>
-
 				</div>
 
 				<div id="langue">
@@ -34,4 +32,5 @@
 						<input type="search" placeholder="Entrez un mot-clef" name="the_search">                    
 	                </form>
                 </div>
+                
 			</div>

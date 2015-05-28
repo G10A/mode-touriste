@@ -25,9 +25,9 @@ body {
   	margin-right: auto;
 	display: block;
 	background-color: white ;
-	height: 104px;
+	height: 100px;
 	padding-left: 150px;
-	
+	background-image: url("https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSP7ieZHsJQtx-FtVBFeFufv2qmdjEWDGg37OJvTr8hVlyYbFbf");
 }
 
 #banner1 div#erreur_connexion{
@@ -123,12 +123,13 @@ body {
 	width: 182.3px;
 	color: white;
 	text-decoration: none;
+	font-style: italic;
 
 }
 
 #menu ul li a:hover {
+	
 	color: white;
-
 }
 
 
@@ -152,37 +153,53 @@ body {
 
 #deposeruneoffre{
 
-	
+
 }
 
 #deposeruneoffre h1 {
 
-	margin-left: 260px;
-	width: 260px;
+	margin-top: 0px;
+	margin-left: 0px;
+	margin-right: 0px;
+	height: 45px;
+	text-align: center;
+	text-decoration: underline;
 }
 
 #formulaire{
 
-	background-color: #D5E896;
 	border: 2px dotted black;
 	border-radius: 4%;
 	width: 500px;
 	margin-left: 140px;
+	margin-top: 20px;
 	display: inline-block;
-		
+	background-color: #D5E896;
+	vertical-align: top;		
+}
+
+#formulaire div{
+	display: inline-block;
+	margin-bottom: 25px;
+	margin-left: 68px;
+	margin-top: -10px;
+}
+
+ #formulaire table{
+	
+	margin-left: 10px;
 }
 
 #div_photo{
 
 	margin-left: 55px;
 	margin-bottom: 100px;
+	margin-top: 100px;
 	display: inline-block;
 	min-height: 300px;
 	max-height: 400px;
 	min-width: 300px;
 	max-width: 400px;
-
-
 }
 
 #contenuprincipalf {
@@ -195,54 +212,102 @@ body {
 }
 
 
-#profil{
-	margin-left:133px;
-	width: 1100px;
-	position: absolute;
+#profil {
+	width: 500px;
+	height: 600px;
+	vertical-align: top;	
+	display: inline-block;
+	margin-left: 100px;
+	position: fixed;
+
 }
 
-#profil_gauche {
 
-	position: relative;
-	border: 2px dotted black;
-	width: 440px;
-	height: 400px;
-	background-color: #D5E896;
-	font-size: 1.3em;
-	border-radius: 5%;
-	margin-top: 52px;
-	float: left;
-	display: block;
-}
-#titre {
-	text-align: center;
-}
+#profil_info{
 
-#profil_droit {
-
-	position: relative;
-	width: 450px;
-	margin-left: 125px;
-	float: right;
-	display: block;
-}
-
-#offre {
-
-	position: relative;
 	border: 2px dotted black;
 	width: 450px;
 	height: 400px;
 	background-color: #D5E896;	
-	margin-top: -144px;
 	font-size: 1.3em;
-	display: block;
-	border-radius: 5%;
+	border-radius: 5%;	
+	margin-top: 50px;
+}
+
+#profil table{
+	margin-top: -170px;
+	margin-left: 10px;
+	text-align: right;
+}
+
+#profil td {
+	padding: 4px;
+	padding-right: 15px;
+	height: 40px;
+	text-align: right;
+	
+}
+
+#profil td p {
+	background-color: white;
+	display: inline-block;
+	width: 192px;
+
+}
+
+#profil h1 {
+	text-align: center;
+	margin-top: -8px;
+	text-decoration: underline;
+}
+
+#profil_offre {
+	width: 525px;	
+	display: inline-block;
+	margin-left: 675px;
+}
+
+#profil_offre h1 {
+	text-align: center;
+	width: 300px;
+	margin: auto;
+	margin-top: 10px;
+	background-color: white;
+}
+
+.offre  {
+
+	border: 2px dotted black;
+	width: 450px;
+	height: 400px;
+	background-color: #D5E896;	
+	font-size: 1.3em;
+	border-radius: 5%;	
+	margin: 15px;
+	margin-top: 10px;
+	margin-bottom: 30px;
+}
+
+.offre table{
+	margin: auto;
+	margin-top: -245px;
+	margin-right: 35px;
+}
+
+.offre td{
+	text-align: right;
+	height: 33px;
+	padding-right: 10px;
+
 }
 
 
 
 
+
+#titre {
+	text-align: center;
+}
 
 footer {
 	padding-bottom: 0px;
