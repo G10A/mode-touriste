@@ -34,16 +34,17 @@
 			$quantite = htmlspecialchars($_POST['quantite']);
 			$commentaire = htmlspecialchars($_POST['commentaire']);
 			$pseudo = htmlspecialchars($_SESSION['pseudo']);
-			$photo = $_FILES["photo"]["tmp_name"];
 
-			$req=$bdd->prepare('INSERT INTO offre(espece, zone_de_vente, date_du_produit, poids, prix, provenance, quantite, fruit_ou_legume, vente_ou_echange, commentaire, pseudo, photo) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)');
-			$req->execute(array($espece, $zone_de_vente, $date_du_produit, $poids, $prix, $provenance, $quantite, $fruit_ou_legume, $vente_ou_echange, $commentaire, $pseudo, $photo));
-
-			$uploaddir = '/wamp/www/mode-touriste/image/';
-			$uploadfile = $uploaddir . basename($_FILES['photo']['name']);
+			$uploaddir = '/wamp/www/mode-touriste/image/'. rand(1,9999);
+			$uploadfile = $uploaddir .basename($_FILES['photo']['name']);
 			
 			echo '<pre>';
 			move_uploaded_file($_FILES['photo']['tmp_name'], $uploadfile);
+
+
+			$req=$bdd->prepare('INSERT INTO offre(espece, zone_de_vente, date_du_produit, poids, prix, provenance, quantite, fruit_ou_legume, vente_ou_echange, commentaire, pseudo, photo) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)');
+			$req->execute(array($espece, $zone_de_vente, $date_du_produit, $poids, $prix, $provenance, $quantite, $fruit_ou_legume, $vente_ou_echange, $commentaire, $pseudo, $uploadfile));
+
 
 
 			$message_right = "votre offre a bien été déposée";
