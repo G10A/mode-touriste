@@ -4,7 +4,7 @@ body {
 	background-image: url("https://static.maximumwallhd.com/fr/fond-ecran/nature/42622-trees-sky-herbs-sunrise-clouds.jpg");
 	background-attachment: fixed;
 	overflow-x: scroll;
-	  background-size: cover;
+	background-size: cover;
 }
 
 /*   */
@@ -121,7 +121,7 @@ body {
 	padding-top: 10px;
 	display: inline-block;
 	height: 30px;
-	width: 182.3px;
+	width: 182px;
 	color: white;
 	text-decoration: none;
 	font-style: italic;
@@ -358,6 +358,7 @@ footer {
 	height: 60px;
 	width: 1100px;
 	position: absolute;
+	vertical-align: bottom;
 }
 
 footer p {
