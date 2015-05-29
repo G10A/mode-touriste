@@ -13,9 +13,9 @@
 		reader.addEventListener('load',function(e){
 
 			var imgElement = document.createElement('img');
-			imgElement.style.minWidth = '100x';
+			imgElement.style.minWidth = '100px';
 			imgElement.style.minHeight = '100px';
-			imgElement.style.maxWidth = '100x';
+			imgElement.style.maxWidth = '100px';
 			imgElement.style.maxHeight = '100px';
 			imgElement.src = e.target.result;
 			div_photo.appendChild(imgElement);

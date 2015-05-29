@@ -7,7 +7,7 @@ body {
 	background-size: cover;
 }
 
-/*   */
+/*  https://static.maximumwallhd.com/fr/fond-ecran/abstrait/107808-white-green-background-lines-light-green.jpg */
 /*  http://www.fantom-xp.com/wallpapers/29/Nature_Mysterys.jpg */
 /* http://thumbs.dreamstime.com/z/bulles-vertes-de-fond-de-nature-13978833.jpg */
 /* https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTGEHnxqizqqzVpLS7B2dSsa3lYhVAIKO4H8vX6me8EiCOpPhUXfg */
@@ -93,7 +93,7 @@ body {
 
 #menu {
 	margin: auto;
-	width: 1100px;
+	width: 1300px;
 	height:40px;
 	position: relative;
 
@@ -188,12 +188,10 @@ body {
 
 	margin-left: 55px;
 	margin-bottom: 100px;
-	margin-top: 100px;
+	margin-top: 150px;
 	display: inline-block;
-	min-height: 300px;
-	max-height: 400px;
-	min-width: 300px;
-	max-width: 400px;
+	width: 100px;
+	height: 100px;
 }
 
 #contenuprincipalf {
@@ -208,11 +206,10 @@ body {
 
 #profil {
 	width: 500px;
-	height: 600px;
-	vertical-align: top;	
+	height: 600px;	
 	display: inline-block;
-	margin-left: 100px;
-	position: fixed;
+	margin-left: 400px;
+	margin-top: -20px;
 
 }
 
@@ -258,7 +255,7 @@ body {
 .profil_offre {
 	width: 525px;	
 	display: inline-block;
-	margin-left: 675px;
+	margin-left: 375px;
 }
 
 .profil_offre h1, .offre_fruit_legume h1 {
@@ -294,7 +291,6 @@ body {
 	text-align: right;
 	height: 33px;
 	padding-right: 10px;
-
 }
 
 
