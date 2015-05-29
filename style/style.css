@@ -4,6 +4,7 @@ body {
 	background-image: url("https://static.maximumwallhd.com/fr/fond-ecran/nature/42622-trees-sky-herbs-sunrise-clouds.jpg");
 	background-attachment: fixed;
 	overflow-x: scroll;
+	  background-size: cover;
 }
 
 /*   */
