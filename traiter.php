@@ -43,12 +43,7 @@
 			$uploadfile = $uploaddir . basename($_FILES['photo']['name']);
 			
 			echo '<pre>';
-			if (move_uploaded_file($_FILES['photo']['tmp_name'], $uploadfile)) {
-			
-			           
-			} else {
-			   
-			}
+			move_uploaded_file($_FILES['photo']['tmp_name'], $uploadfile);
 
 
 			$message_right = "votre offre a bien été déposée";
