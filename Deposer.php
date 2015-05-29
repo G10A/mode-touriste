@@ -27,7 +27,7 @@
             <fieldset id="formulaire">
 
                 <h1>Déposer une offre</h1>
-
+            <form enctype="multipart/form-data" action="traiter.php" method="post">
                 <div id="fruitoulégume">
                     <p><b>fruit ou légume :</b></p>
                     <input type="radio" name="fruit_ou_legume" value="legume" /> Légume<br />
@@ -73,7 +73,7 @@
                     </tr>
                 
                     <tr>
-                        <td><label for="quantité"><strong>quantité :</strong></label></td>
+                        <td><label for="quantite"><strong>quantité :</strong></label></td>
                         <td><input type="text" name="quantite" id="quantite"/></td> 
                     </tr>
 
