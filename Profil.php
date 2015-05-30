@@ -21,7 +21,7 @@
 		?>
 
 
-				
+				<div id="contenuprincipal">
 
 					<section id="profil">
 						<fieldset id="profil_info">
@@ -77,7 +77,7 @@
 			 
 
 			?>
-		 
+		 </div>
 			<?php  include("Base/footer.php");  ?>
 
 		</div>	
