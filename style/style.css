@@ -1,7 +1,7 @@
 body {
 	overflow-x: hidden;
 	margin: 0;
-	background-image: url("https://static.maximumwallhd.com/fr/fond-ecran/nature/42622-trees-sky-herbs-sunrise-clouds.jpg");
+	background-image: url("https://static.maximumwallhd.com/fr/fond-ecran/nature/42622-trees-sky-herbs-sunrise-clouds.jpg"); 
 	background-attachment: fixed;
 	overflow-x: scroll;
 	background-size: cover;
@@ -184,7 +184,7 @@ body {
 	margin-left: 10px;
 }
 
-#div_photo{
+.div_photo{
 
 	margin-left: 55px;
 	margin-bottom: 100px;
@@ -269,8 +269,8 @@ body {
 .offre  {
 
 	border: 1px solid black;
-	width: 650px;
-	max-width: 650px;
+	width: 540px;
+	max-width: 540px;
 	min-height: 300px;
 	max-height: 300px;
 	background-color: #D5E896;	
@@ -283,8 +283,7 @@ body {
 .offre table{
 	margin: auto;
 	margin-top: -245px;
-	margin-right: 90px;
-	border-collapse: collapse;
+
 }
 
 .offre td{
@@ -295,6 +294,15 @@ body {
 	font-size: 18px;
 }
 
+.offre a {
+	text-decoration: none;
+	color: brown;
+}
+
+.offre a:hover {
+	text-decoration: underline;
+}
+
 .photo_offre {
 
 	margin-left: 0px;
@@ -302,13 +310,13 @@ body {
 	max-width: 100px;
 	max-height: 100px;
 	height:100px;
-	background-color: white;
-	margin-top: -200px;
+	background-color: #B5BBC1;
+	margin-top: -300px;
 }
 
 .offre_fruit_legume {
 
-	width: 725px;	
+	width: 600px;	
 	margin-left: 450px;
 	min-height: 520px;	
 	display: inline-block;

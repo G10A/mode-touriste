@@ -84,7 +84,7 @@
                
                 
                     <tr>
-                        <td><input id="input_photo" type="file" name="photo" /></td>
+                        <td><input class="input_photo" type="file" name="photo" /></td>
                     </tr>
 
                     <tr>
@@ -97,6 +97,10 @@
             </form>
             </fieldset>
 
+            <div class="div_photo"> </div>
+
+            </div>
+
             <?php
                 }
                 else{
@@ -105,10 +109,7 @@
             ?>
 
 					
-            <div id="div_photo"> </div>
-
-
-			</div>
+            
 
 			<?php include("Base/footer.php"); ?>
 		    </div>

@@ -25,13 +25,13 @@
 
 			<div id="deposeruneoffre">
 			
-			<h1>Modifier l'offre <?php echo $donnees['espece'];?> </h1>
 
             <?php
                 if(isset($_SESSION['pseudo'])){
             ?>
 
             <fieldset id="formulaire">
+                <h1>Modifier l'offre <?php echo $donnees['espece'];?></h1>
             <form action="traiter2.php" method="post">
             <input type="hidden" name="idoffre" value="<?php echo $_GET['$offre'] ?>"/></input>
                 <table>
@@ -92,7 +92,7 @@
                
                 
                     <tr>
-                        <td><input type="file" name="photo" /></td>
+                        <td><input class="input_photo" type="file" name="photo" /></td>
                     </tr>
                 
                 </table>
@@ -101,6 +101,10 @@
         
             </form>
             </fieldset>
+
+            <div class="div_photo"> </div>
+
+            </div>
 
             <?php
                 }
@@ -117,6 +121,8 @@
 
 			<?php include("Base/footer.php"); ?>
 		</div>
+
+        <script src="javascript/preview_photo.js"></script>
 
 	</body>
 </html>

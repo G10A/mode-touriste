@@ -27,8 +27,8 @@
 
 
 	var allowed_types = ['png', 'jpg', 'jpeg', 'gif'];      //On définit les extensions qui vont être autorisées
-	var fileInput = document.getElementById('input_photo'); //on accède a l'élément input contenant la photo
-	var div_photo = document.getElementById('div_photo');   // on accède au div où l'on va placer la photo
+	var fileInput = document.querySelector('.input_photo'); //on accède a l'élément input contenant la photo
+	var div_photo = document.querySelector('.div_photo');   // on accède au div où l'on va placer la photo
 
 
 	fileInput.addEventListener('change', function(e){
