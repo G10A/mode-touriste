@@ -101,6 +101,7 @@
                 }
                 else{
                     echo "Veuillez vous connecter pour accéder à cette fonctionnalité";
+
                 }
             ?>
 
