@@ -12,14 +12,18 @@
 		//On charge la photo, dont l'URL est récupéré via la propriété result 
 		reader.addEventListener('load',function(e){
 
-			var imgElement = document.createElement('img');
-			imgElement.style.minWidth = '100px';
-			imgElement.style.minHeight = '100px';
-			imgElement.style.maxWidth = '100px';
-			imgElement.style.maxHeight = '100px';
-			imgElement.src = e.target.result;
-			div_photo.appendChild(imgElement);
 
+			if(!imgElement){
+				var imgElement = document.createElement('img');
+				imgElement.style.minWidth = '100px';
+				imgElement.style.minHeight = '100px';
+				imgElement.style.maxWidth = '100px';
+				imgElement.style.maxHeight = '100px';
+				div_photo.appendChild(imgElement);
+			}
+
+			imgElement.src = e.target.result;
+			
 		}, false);
 
 			
@@ -29,7 +33,6 @@
 	var allowed_types = ['png', 'jpg', 'jpeg', 'gif'];      //On définit les extensions qui vont être autorisées
 	var fileInput = document.querySelector('.input_photo'); //on accède a l'élément input contenant la photo
 	var div_photo = document.querySelector('.div_photo');   // on accède au div où l'on va placer la photo
-
 
 	fileInput.addEventListener('change', function(e){
 
