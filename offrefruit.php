@@ -68,6 +68,14 @@
 						<td><?php echo $donne['email']; ?></td>
 						</tr>
             		</table>
+
+            		<div class="photo_offre">
+	            			<?php
+	            				$file = $donnees['photo'];	
+	            			?>
+	            			<img src="<?php echo $file; ?>" width="100" height="100">
+	            	</div>
+
             	</fieldset>
             	
 

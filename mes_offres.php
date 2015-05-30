@@ -19,14 +19,14 @@
 		 	 
 		?>
 
-				<section class="profil_offre">
+				<section class="offre_fruit_legume">
 					<h1>Mes offres</h1>
 
 		<?php while ($donnees = $reponse->fetch()) 
 			{  
 		?>
 					<fieldset class="offre">
-						<table>
+						<table style="margin-right:30px">
 						 	<tr>
 							<td> Espèce: </td>
 							<td><?php echo $donnees['espece'];?></td> </br>
@@ -68,6 +68,17 @@
 							<td colspan="2" style="text-align:center"><a href="modifieoffre.php?$offre=<?php echo $donnees['ID']?>">Modifier l'offre</a></td>
 							</tr>
 	            		</table>
+
+	            		<div class="photo_offre">
+	            			<?php
+	            				$file = $donnees['photo'];
+	            				
+	            			?>
+	            			<img src="<?php echo $file; ?>" width="100" height="100">
+
+
+	            		</div>
+
             		</fieldset>
 
             	

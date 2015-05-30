@@ -35,8 +35,10 @@
 			$commentaire = htmlspecialchars($_POST['commentaire']);
 			$pseudo = htmlspecialchars($_SESSION['pseudo']);
 
-			$uploaddir = '/wamp/www/mode-touriste/image/'. rand(1,9999);
+
+			$uploaddir = 'image/'. rand(1,999);
 			$uploadfile = $uploaddir .basename($_FILES['photo']['name']);
+			$download_file = 'image/'.basename($_FILES['photo']['name']);
 			
 			echo '<pre>';
 			move_uploaded_file($_FILES['photo']['tmp_name'], $uploadfile);
