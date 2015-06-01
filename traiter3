@@ -19,6 +19,7 @@
 
 
   if(isset($_POST['modifier_profil'])){
+    
     if(isset($_SESSION['pseudo'])){
 
     if(isset($_POST['Nom']) AND isset($_POST['Prenom']) AND isset($_POST['Annee_de_naissance']) AND isset($_POST['sexe']) AND isset($_POST['Localite']) AND isset($_POST['login']) AND isset($_POST['pass']) AND isset($_POST['pass2']) AND isset($_POST['email']) AND isset($_POST['email2'])){

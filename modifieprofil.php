@@ -65,7 +65,7 @@
             
             			 <tr>   
             <td><label for="Nom de compte"><strong>Nom de compte :</strong></label></td>
-            <td><input type="Nom de compte" name="login" id="Nom de compte" value="<?php echo $donnees['pseudo'] ?>"/></td>
+            <td><input type="Nom de compte" name="login" id="login" value="<?php echo $donnees['pseudo'] ?>"/></td>
                </tr>
 
             <tr>
@@ -73,7 +73,7 @@
             <td><input type="password" name="pass" id="pass"/ value="<?php echo $donnees['mot_de_passe'] ?>"></td>
             
             </tr>
-                        <form action="traiter2.php" method="post">
+
             <input type="hidden" name="idoffre" value="<?php echo $_GET['$offre'] ?>"/></input>
             
 
