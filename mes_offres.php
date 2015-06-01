@@ -75,17 +75,15 @@
 	            				
 	            			?>
 	            			<img src="<?php echo $file; ?>" width="100" height="100">
-
-	            			<?php include("supprimer.php")  ?>
-	            			<form action="mes_offres.php"  method="post" >
-	            				<input type="hidden" name="id_offre" value="<?php echo $donnees['ID']?>"/>
-	            				<input type="submit" id="supprimer_offre" name="supprimer_offre"  value="supprimer cette offre"/>
-	            			</form>
-	            			
-
-
 	            		</div>
 
+	            			
+	            			<?php include("supprimer.php")  ?>
+	           
+	            			<form id="supprimer_offre" method="post">
+	            				<input type="hidden" name="id_offre" value="<?php echo $donnees['ID']?>"/>
+	            				<input type="submit" name="supprimer_offre"  value="supprimer cette offre"/>
+	            			</form>
             		</fieldset>
 
             	
@@ -111,6 +109,20 @@
 			<?php  include("Base/footer.php");  ?>
 
 		</div>
+
+		<script>
+			var bouton1 = document.querySelector('#supprimer_offre');
+
+			bouton1.addEventListener('submit', function(e){
+
+					if(confirm("êtes vous sûr de vouloir supprimer cette offre ?")){
+						alert('Votre offre a bien été supprimée');
+						e.target.submit();	
+					}
+
+			}, true);
+
+		</script>
 		
 	</body>
 </html>
