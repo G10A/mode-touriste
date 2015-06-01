@@ -1,0 +1,92 @@
+<?php
+  session_start();
+?>
+
+<!DOCTYPE html>
+<html>
+
+  <?php include("Base/head.php"); ?>
+  <body>
+
+    <div id="site">
+      <?php include("Base/choixheader.php"); ?>
+
+<?php
+
+  
+
+  $bdd = new PDO('mysql:host=localhost;dbname=test','root','', array(PDO::ATTR_ERRMODE => PDO::ERRMODE_EXCEPTION));
+
+
+  if(isset($_POST['modifier_profil'])){
+    if(isset($_SESSION['pseudo'])){
+
+    if(isset($_POST['Nom']) AND isset($_POST['Prenom']) AND isset($_POST['Annee_de_naissance']) AND isset($_POST['sexe']) AND isset($_POST['Localite']) AND isset($_POST['login']) AND isset($_POST['pass']) AND isset($_POST['pass2']) AND isset($_POST['email']) AND isset($_POST['email2'])){
+
+      if($_POST['pass'] == $_POST['pass2']){
+        if($_POST['email'] == $_POST['email2']){
+                  $reponse = $bdd -> query("SELECT COUNT(pseudo) FROM inscrits WHERE pseudo = '".$_POST['login']."'");
+        
+        if($reponse -> fetch()[0] == 0){
+        
+        $reponse2 = $bdd -> query("SELECT COUNT(email) FROM inscrits WHERE email = '".$_POST['email']."'");
+       if($reponse2 -> fetch()[0] == 0){
+      
+      
+      $espece = htmlspecialchars($_POST['espece']);
+      $zone_de_vente = htmlspecialchars($_POST['zone_de_vente']);
+      $date_du_produit = htmlspecialchars($_POST['date_du_produit']);
+      $vente_ou_echange = htmlspecialchars($_POST['vente_ou_echange']);
+      $fruit_ou_legume = htmlspecialchars($_POST['fruit_ou_legume']);
+      $poids = htmlspecialchars($_POST['poids']);
+      $prix = htmlspecialchars($_POST['prix']);
+      $provenance = htmlspecialchars($_POST['provenance']);
+      $quantite = htmlspecialchars($_POST['quantite']);
+      $commentaire = htmlspecialchars($_POST['commentaire']);
+      $pseudo = htmlspecialchars($_SESSION['pseudo']);
+      $offre = htmlspecialchars($_POST['idoffre']);
+
+      
+            $req=$bdd->exec( "UPDATE inscrit SET nom='".$nom."', prenom= '".$prenom."', anne_de_naissance= '".$annee_de_naissance."', sexe='".$sexe."', localite='".$localite."', pseudo='".$pseudo."', pass='".$pass."', email='".$email."' WHERE id='".$offre."'");
+
+      $message_right = "votre offre a bien été modifié";
+      echo $message_right;
+      }
+      else{
+            $message_right = "l'email est déjà utilisé";
+      echo $message_right;
+
+      }
+      }else{$message_erreur = "Le nom de compte est déjà utilisé";
+      echo  $message_erreur;
+
+      }
+
+      }else{$message_erreur = "Les 2 emails sont différents";
+      echo  $message_erreur;
+
+      }
+
+      }else{      $message_erreur = "Les 2 mots de passe sont différents";
+      echo  $message_erreur;  
+
+      }
+    
+      }else{
+
+      $message_erreur = "Veuillez remplir tous les champs";
+      echo  $message_erreur;  
+      }
+
+    } 
+    else{
+      $message_erreur = "Veuillez vous connecter";
+      echo  $message_erreur;  
+
+    }
+  }
+
+?>
+
+  </body>
+</html>

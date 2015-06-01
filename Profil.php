@@ -53,7 +53,7 @@
 									<td><?php echo $donnees['email'];?></td></br>
 									</tr>
 									<tr>
-									<td colspan="2" style="text-align:center"><a href="modifieprofil.php?$offre=<?php echo $donnees['pseudo']?>">Modifier son profil</a></td>
+									<td colspan="2" style="text-align:center"><a href="modifieprofil.php?$offre=<?php echo $donnees['id']?>">Modifier son profil</a></td>
 									</tr>
 								</tbody>
 		    				</table>
