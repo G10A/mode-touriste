@@ -129,7 +129,7 @@ body {
 }
 
 #contenuprincipal {
-	min-height: 500px;
+	min-height: 100%;
 	display: block;
 	width: 1100px;
 	margin: auto;
@@ -185,7 +185,15 @@ body {
 }
 
 .div_photo{
-
+	position: absolute;
+	margin-left: 55px;
+	margin-bottom: 100px;
+	margin-top: 150px;
+	display: inline-block;
+	width: 100px;
+	height: 100px; 
+}
+.azerty{
 	margin-left: 55px;
 	margin-bottom: 100px;
 	margin-top: 150px;
@@ -368,13 +376,13 @@ body {
 
 footer {
 	padding-bottom: 0px;
-	margin-left: 115px;
 	text-align: center;
 	background-color: pink;
 	height: 60px;
-	width: 1100px;
-	position: absolute;
-	vertical-align: bottom;
+	width: 100%;
+	position: relative;
+	clear:both;
+
 }
 
 footer p {

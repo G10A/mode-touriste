@@ -102,10 +102,16 @@
             </form>
             </fieldset>
 
-            <div class="div_photo"> </div>
+            <div class="div_photo">
 
             </div>
+            <div class="azerty">
+                            <?php
+                                $file = $donnees['photo'];  
+                            ?>
+                            <img src="<?php echo $file; ?>" width="100" height="100">
 
+            </div>
             <?php
                 }
                 else{
