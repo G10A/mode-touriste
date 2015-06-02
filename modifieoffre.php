@@ -51,18 +51,19 @@
                        <td><label for="poids"><strong>Date du produit :</strong></label></td>
                         <td><input type="date" name="date_du_produit" id="dateduproduit" value="<?php echo $donnees['date_du_produit'];?>"/></td> 
                     </tr>
-                
+
+                <?php $f_g = $donnees['fruit_ou_legume']; ?>
                     <div id="fruitoulégume">
-                        <p><b>Fruit ou légume :avant c'était : <?php echo $donnees['fruit_ou_legume'] ?></b></p>
-    		            <input type="radio" name="fruit_ou_legume" value="legume"/> Légume<br />
-    			        <input type="radio" name="fruit_ou_legume" value="fruit" /> Fruit
+                        <p><b>Fruit ou légume :</b></p>
+    		            <input type="radio" name="fruit_ou_legume" value="legume" <?php if($f_g=='legume'){ ?>checked<?php } ?>/> Légume<br />
+    			        <input type="radio" name="fruit_ou_legume" value="fruit"  <?php if($f_g=='fruit'){ ?>checked<?php } ?>/> Fruit
     		        </div>
     	
-    		
+    		    <?php $v_e = $donnees['vente_ou_echange']; ?>  
     			    <div id="venteouéchange">
-    				    <p><b>vente ou échange : avant c'était : <?php echo $donnees['vente_ou_echange'] ?></b></p>
-    			         <input type="radio" name="vente_ou_echange" value="vente" /> vente<br />
-    			         <input type="radio" name="vente_ou_echange" value="echange" /> échange
+    				    <p><b>vente ou échange :</b></p>
+    			         <input type="radio" name="vente_ou_echange" value="vente" <?php if($v_e=='vente'){ ?>checked<?php } ?>/> vente<br />
+    			         <input type="radio" name="vente_ou_echange" value="echange" <?php if($v_e=='echange'){ ?>checked<?php } ?>/> échange
     		        </div>
     			
     			    <tr>   
