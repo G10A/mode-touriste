@@ -78,7 +78,7 @@
 	            			<img src="<?php echo $file; ?>" width="100" height="100">
 	            		</div>		
 	           
-            			<form id="supprimer_offre" method="post">
+            			<form id="supprimer_offre" method="post" onsubmit="return verifForm()">
             				<input type="hidden" name="id_offre" value="<?php echo $donnees['ID']?>"/>
             				<input type="submit" name="supprimer_offre"  value="supprimer cette offre"/>
             			</form>
