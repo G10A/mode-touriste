@@ -66,9 +66,22 @@ body {
 
 #banner1 div#erreur_connexion{
 	position: absolute;
-	margin-top: 55px;
-	margin-left: 680px
+	margin-top: 45px;
+	margin-left: 880px;
+	max-height: 40px;
+	color: red;
 }
+
+#banner1 div#erreur_connexion p{
+	background-color: black;
+	margin-left: 20px;
+}
+
+#se_connecter{
+	margin-top: 50px;
+	margin-left: 30px;
+}
+
 #banner1 div#titre {
 	position: absolute;
 	margin-top: 5px;

@@ -15,13 +15,13 @@
 				<div id="erreur_connexion">
 					
 					<?php if(isset($_SESSION['erreur_connexion'])){  ?>
-					<input type="text" disabled id="message_erreur" value="<?php echo $_SESSION['erreur_connexion']; ?>"/>
+					<p id="message_erreur"><?php echo $_SESSION['erreur_connexion']; ?>"</p>
 					<?php	$_SESSION['erreur_connexion']= "   ";
 			 		} 	?>
 				</div>
 
 				<div id="login">
-					<button type="button" style="margin-top:50px;" id="se_connecter" >Se Connecter</button>
+					<button type="button" id="se_connecter" >Se Connecter</button>
 				</div>
 
 				<div id="langue">

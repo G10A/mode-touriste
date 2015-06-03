@@ -4,8 +4,12 @@
 	var annuler = document.getElementById('annuler');
 	var filtre = document.getElementById('filtre');
 	var boite = document.getElementById('boite');
-	var formulaire = document.getElementById('formulaire_inscription');
 	
+	var par = document.getElementById('message_erreur2');
+
+
+	
+
 	//ouvre la lightbox pour se connecter
 	se_connecter.addEventListener('click', function(){
 
@@ -16,7 +20,7 @@
 	}, false);
 
 	
-	//ferme la lightbox pour se connecter
+	//ferme la lightbox 
 	annuler.addEventListener('click', function(){
 
 				
@@ -25,35 +29,40 @@
 
 	}, false);
 
-/*	//affiche le message
+
+
+/*
+
+	//affiche le message
 	function envoiOk(mess){
 
-				
-		var par = document.getElementById('message_erreur2');
-		var message2 = document.createTextNode(mess);
+		if(mess){	
 
-		par.appendChild(message2);
-			
+			var par = document.getElementById('message_erreur2');
+			var message2 = document.createTextNode(mess);
+			par.appendChild(message2);
+			return false;
 		}
+		return true;				
 	}
 
+
 	
+
+	var formulaire = document.getElementById('formulaire_inscription');
+
 	//valide la connection ou appelle la fonction qui affiche le message sinon
 	formulaire.addEventListener('submit', function(){
 
+
 		var message = document.getElementById('message_erreur').value;
 
-		if(message){
-			envoiOk(message);
-			return false;
-		}
-
-		return true;
+		envoiOk(message);
 
 	}, false);
 
-*/
 
+*/
 
 })();	
 

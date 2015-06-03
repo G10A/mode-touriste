@@ -5,7 +5,7 @@
       <h1>Connexion</h1>   
     </div>  
     <div id="boite_inside">
-        <form id="formulaire_inscription" method="post" action="accueil.php"> 
+        <form id="formulaire_inscription" method="post"> 
         <p style= "font:  17pt serif">
           <input type="text" name="pseudo" id="pseudo" placeholder="pseudo" size="20" maxlength="50"  /><br>
           <input type="password" name="MDP" id="MDP" placeholder="mot de passe" size="20" /><br>
