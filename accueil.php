@@ -6,11 +6,12 @@
 
 <html>
 	<?php include("Base/head.php"); ?>
+  
 	<body>
 
 		<div id="site">
-      <?php include("Base/choixheader.php"); ?>
 
+      <?php include("Base/choixheader.php"); ?>
 
                   <?php
                 if(isset($_SESSION['pseudo'])){
@@ -25,7 +26,7 @@
                 }
                 else{ ?>
 			<div id="contenuprincipal">
-			
+
 				<p>Bonjour et bienvenue sur le site<br>
 
 					Les vergers a pour but de vendre, acheter ou échanger ses fruits et/ou légumes entre particuliers<br>
@@ -58,9 +59,9 @@
       </em>
     </div>
 
-</div>
+    </div>
 			<?php include("Base/footer.php"); ?>
 		</div>
-
+  
 	</body>
 </html>
