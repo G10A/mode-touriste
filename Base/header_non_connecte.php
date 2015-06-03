@@ -14,9 +14,9 @@
 
 				<div id="erreur_connexion">
 					
-					<?php if(isset($_SESSION['erreur_connexion'])){ 
-					echo '<p style="color:red">'.$_SESSION['erreur_connexion'].'</p>'; 
-					$_SESSION['erreur_connexion']= "   ";
+					<?php if(isset($_SESSION['erreur_connexion'])){  ?>
+					<input type="text" disabled id="message_erreur" value="<?php echo $_SESSION['erreur_connexion']; ?>"/>
+					<?php	$_SESSION['erreur_connexion']= "   ";
 			 		} 	?>
 				</div>
 

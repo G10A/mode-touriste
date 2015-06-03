@@ -11,6 +11,7 @@
           <input type="password" name="MDP" id="MDP" placeholder="mot de passe" size="20" /><br>
           <input type="submit" name="connexion"  value=" Connectez vous"/><button type="button" id="annuler" >Annuler</button>
       </p>
+      <p id="message_erreur2"></p>
   </form>
     </div>
 </div>
