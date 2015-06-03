@@ -14,7 +14,14 @@
 				 ?>
 
 
-				 <p class="lien_produit"><a href="offrefruit.php">Les Fruits</a></p>
+				<table id="table_produit"> 
+					<tr>
+						<td><p class="lien_produit"><a href="offrelegume.php">Les Légumes</a></p></td>	
+					</tr> 
+					<tr>
+						<td><p class="lien_produit"><a href="offrefruit.php">Les Fruits</a></p></td>
+					</tr>
+				</table>
 
 				<section class="offre_fruit_legume">
 					<h1>Les offres de légumes</h1>

@@ -15,7 +15,7 @@
 				<div id="erreur_connexion">
 					
 					<?php if(isset($_SESSION['erreur_connexion'])){  ?>
-					<p id="message_erreur"><?php echo $_SESSION['erreur_connexion']; ?>"</p>
+					<p id="message_erreur"><?php echo $_SESSION['erreur_connexion']; ?></p>
 					<?php	$_SESSION['erreur_connexion']= "   ";
 			 		} 	?>
 				</div>

@@ -8,10 +8,10 @@
 	<?php include("Base/head.php"); ?>
 	<body>
 
-		<div id="site">
+		
 			<?php include("Base/choixheader.php"); ?>
 
-
+        <div id="site">
 
 
 			<div id="deposeruneoffre">
@@ -99,7 +99,7 @@
 
             <div class="div_photo"></div>
 
-            </div>
+            
 
             <?php
                 }
@@ -110,11 +110,9 @@
 
 					
             
-
+            </div>
+        </div>
 			<?php include("Base/footer.php"); ?>
-		    </div>
-
-
         
         <script src="javascript/preview_photo.js"></script>
 
