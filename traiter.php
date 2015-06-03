@@ -38,7 +38,6 @@
 
 			$uploaddir = 'image/'. rand(1,999);
 			$uploadfile = $uploaddir .basename($_FILES['photo']['name']);
-			$download_file = 'image/'.basename($_FILES['photo']['name']);
 			
 			echo '<pre>';
 			move_uploaded_file($_FILES['photo']['tmp_name'], $uploadfile);

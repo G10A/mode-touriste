@@ -36,9 +36,11 @@
 			$commentaire = htmlspecialchars($_POST['commentaire']);
 			$pseudo = htmlspecialchars($_SESSION['pseudo']);
 			$offre = htmlspecialchars($_POST['idoffre']);
-
 			
-			$req=$bdd->exec( "UPDATE offre SET espece='".$espece."', zone_de_vente= '".$zone_de_vente."', date_du_produit= '".$date_du_produit."', poids='".$poids."', prix='".$prix."', provenance='".$provenance."', quantite='".$quantite."', fruit_ou_legume='".$fruit_ou_legume."', vente_ou_echange='".$vente_ou_echange."', commentaire= '".$commentaire."', pseudo='".$pseudo."' WHERE ID='".$offre."'");
+			$uploadfile = 'image/'. $_GET["$offre"].basename($_FILES['photo1']['name']);
+			move_uploaded_file($_FILES['photo1']['tmp_name'], $uploadfile);
+			
+			$req=$bdd->exec( "UPDATE offre SET espece='".$espece."', zone_de_vente= '".$zone_de_vente."', date_du_produit= '".$date_du_produit."', poids='".$poids."', prix='".$prix."', provenance='".$provenance."', quantite='".$quantite."', fruit_ou_legume='".$fruit_ou_legume."', vente_ou_echange='".$vente_ou_echange."', commentaire= '".$commentaire."', pseudo='".$pseudo."', photo='".$uploadfile."'  WHERE ID='".$offre."'");
 
 			
 			$message_right = "votre offre a bien été modifié";

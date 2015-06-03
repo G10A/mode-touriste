@@ -32,7 +32,7 @@
 
             <fieldset id="formulaire">
                 <h1>Modifier l'offre <?php echo $donnees['espece'];?></h1>
-            <form action="traiter2.php" method="post">
+            <form enctype="multipart/form-data" action="traiter2.php" method="post" >
             <input type="hidden" name="idoffre" value="<?php echo $_GET['$offre'] ?>"/></input>
                 <table>
                     <tr>         
@@ -93,7 +93,7 @@
                
                 
                     <tr>
-                        <td><input class="input_photo" type="file" name="photo" /></td>
+                        <td><input class="input_photo" type="file" name="photo1" value=<?php $donnees['photo'] ?> ></td>
                     </tr>
                 
                 </table>
@@ -107,10 +107,8 @@
 
             </div>
             <div class="azerty">
-                            <?php
-                                $file = $donnees['photo'];  
-                            ?>
-                            <img src="<?php echo $file; ?>" width="100" height="100">
+
+                            <img src="<?php echo $donnees['photo']; ?>" width="100" height="100">
 
             </div>
             <?php
