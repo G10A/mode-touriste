@@ -60,13 +60,9 @@
 						<td><?php echo $donnees['commentaire'];?></td></br>
 						</tr>
 						<tr>
-						<td>Contacter le vendeur : </td>
-											<?php 
-											$repons = $bdd->prepare('SELECT * FROM inscrits WHERE pseudo=? ');
-											$repons -> execute(array($donnees['pseudo']));
-											$donne = $repons->fetch(); ?>
-						<td><?php echo $donne['email']; ?></td>
+						<td><a href="rdv.php?$offre=<?php echo $donnees['ID']?>">Contacter le vendeur</a> </td>
 						</tr>
+
             		</table>
 
             		<div class="photo_offre">
