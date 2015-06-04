@@ -24,7 +24,7 @@
 
             
 
-            <fieldset id="formulaire">
+            <fieldset id="formulaire_offre">
 
                 <h1>Déposer une offre</h1>
             <form enctype="multipart/form-data" action="traiter.php" method="post">

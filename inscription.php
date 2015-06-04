@@ -170,17 +170,25 @@ if(isset($_POST['register'])){
                 
                 ?>
 				 
-                 <h1>Inscription</h1>
+        <fieldset id="formulaire_inscription">
+          <h1>Inscription</h1>
 
-
- <form action="inscription.php" method="post">
+          <form action="inscription.php" method="post">
         
             <table>
-            	            <tr>
-            
+            <tr>
+                <td><label for="sexe"><strong>Sexe : </strong></label>
+              <input type="radio" name="sexe" value="homme" /> Homme
+              <input type="radio" name="sexe" value="femme" /> Femme
+                </td> 
+            </tr>
+             
+            <tr>
+            </tr> 
+
+            	<tr>      
             <td><label for="Nom"><strong>Nom :</strong></label></td>
-            <td><input type="text" name="Nom" id="Nom"/></td>
-            
+            <td><input type="text" name="Nom" id="Nom"/></td>         
             </tr>
 
 
@@ -189,20 +197,16 @@ if(isset($_POST['register'])){
             
             </tr>
 
-                       </tr>
-                 <td><label for="Année naissance"><strong>Date de naissance (aaaa-jj-mm) :</strong></label></td>
-            <td><input type="date" name="Annee_de_naissance" id="Année de naissance"/></td> 
             </tr>
-            
-            
-			<input type="radio" name="sexe" value="homme" /> Homme<br />
-			<input type="radio" name="sexe" value="femme" /> Femme
+              <td><label for="Année naissance"><strong>Date de naissance (aaaa-jj-mm) :</strong></label></td>
+              <td><input type="date" name="Annee_de_naissance" id="Année de naissance"/></td> 
+            </tr>
 		
 
-			 <tr>   
+			    <tr>   
             <td><label for="Localité"><strong>Localité :</strong></label></td>
             <td><input type="Localité" name="Localite" id="Localité"/></td>
-               </tr>
+          </tr>
             
             			 <tr>   
             <td><label for="Nom de compte"><strong>Nom de compte :</strong></label></td>
@@ -238,6 +242,7 @@ if(isset($_POST['register'])){
         <input type="submit" name="register" value="S'inscrire"/>
         
         </form>
+      </fieldset>
     
     <?php
 

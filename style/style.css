@@ -40,7 +40,7 @@ body {
 	margin-top: -21px;
 }
 
-#formulaire_inscription{
+#formulaire_connexion{
 	margin-left: 100px;
 	margin-top: 50px;
 }
@@ -206,7 +206,27 @@ body {
 	text-decoration: underline;
 }
 
-#formulaire{
+
+#formulaire_inscription{
+
+	background-color: #D5E896;
+	margin-top: 40px;
+	margin-bottom: 70px;
+	width: 700px;
+	border: 1px solid black;
+	margin-left: 100px;
+	border-radius: 1%;
+}
+
+#formulaire_inscription h1{
+	text-align: center;
+	text-decoration: underline;
+	margin-top: 0px;
+}
+
+
+
+#formulaire_offre{
 
 	border: 2px dotted black;
 	border-radius: 4%;
@@ -218,14 +238,14 @@ body {
 	vertical-align: top;		
 }
 
-#formulaire div{
+#formulaire_offre div{
 	display: inline-block;
 	margin-bottom: 25px;
 	margin-left: 68px;
 	margin-top: -10px;
 }
 
- #formulaire table{
+ #formulaire_offre table{
 	
 	margin-left: 10px;
 }
@@ -364,7 +384,7 @@ body {
 	max-width: 100px;
 	max-height: 100px;
 	height:100px;
-	background-color: #B5BBC1;
+/*	background-color: #B5BBC1;  */
 	margin-top: -300px;
 }
 
