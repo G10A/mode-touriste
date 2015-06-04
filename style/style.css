@@ -386,12 +386,12 @@ body {
 #lien_offre {
 
 	margin: auto;
-	font-size: 30	px;
+	font-size: 30px;
 	margin-top: 80px;
 }
 
 #lien_offre td {
-
+	color:;
 	padding: 20px;
 }
 
@@ -405,14 +405,12 @@ body {
 }
 
 #table_produit p{
-	background-color: ;
+	
 }
 
 #table_produit td{
 	border:2px solid black;
 	height:60px;
-	border-color: white;
-
 }
 
 .lien_produit {
@@ -422,11 +420,12 @@ body {
 
 
 .lien_produit a, #lien_offre a {
-/*	color: #062B50; */
 	color:white;
 	text-decoration: none;
 	font-weight: bold;
 }
+
+#lien_offre a{color: #062B50;}
 
 .lien_produit a:hover, #lien_offre a:hover {
 	text-decoration: underline;

@@ -6,6 +6,7 @@
 	<?php include("supprimer.php")  ?>
 	<body>
 		<div id="site">
+			
 		
 			
 		<?php 
@@ -104,9 +105,8 @@
 
 			?>
 		 
+		 </div>
 			<?php  include("Base/footer.php");  ?>
-
-		</div>
 
 		<script src="javascript/supprimer_offre.js"></script>		
 		
