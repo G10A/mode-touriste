@@ -182,24 +182,24 @@ if(isset($_POST['register'])){
               <input type="radio" name="sexe" value="femme" /> Femme
                 </td> 
             </tr>
-             
+
             <tr>
             </tr> 
 
-            	<tr>      
+            <tr>      
             <td><label for="Nom"><strong>Nom :</strong></label></td>
             <td><input type="text" name="Nom" id="Nom"/></td>         
             </tr>
 
 
                  <td><label for="Prenom"><strong>Prenom :</strong></label></td>
-            <td><input type="text" name="Prenom" id="Prenom"/></td>
+              <td><input type="text" name="Prenom" id="Prenom"/></td>
             
             </tr>
 
             </tr>
               <td><label for="Année naissance"><strong>Date de naissance (aaaa-jj-mm) :</strong></label></td>
-              <td><input type="date" name="Annee_de_naissance" id="Année de naissance"/></td> 
+              <td><input type="date" name="Annee_de_naissance" id="Année de naissance"/></td>
             </tr>
 		
 
@@ -216,7 +216,6 @@ if(isset($_POST['register'])){
             <tr>
             <td><label for="pass"><strong>Mot de passe :</strong></label></td>
             <td><input type="password" name="pass" id="pass"/></td>
-            
             </tr>
             
 
