@@ -160,13 +160,15 @@ body {
 	
 }
 
-#menu ul li {
-
+#menu li {
 	border-right: 1px solid white;
 	display: inline-block;
 	list-style-type: none;
 	background-color: black;
+}
 
+#menu li:hover{
+	background-color: #BDD4B0;
 }
 
 #menu ul li a {
@@ -551,5 +553,23 @@ padding:10px;
 	text-decoration: underline;
 }
 
+.table_forum{
+	margin:auto;
+}
 
+.table_forum a{
+	color: #16CA2E;
+}
+
+#tuto_forum{
+	text-align: center;
+}
+
+#tuto_forum a{
+	color: black;
+}
+
+#tuto_forum a:hover{
+	color:brown;
+}
 
