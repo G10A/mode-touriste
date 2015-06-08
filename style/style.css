@@ -187,7 +187,7 @@ body {
 #contenuprincipal {
 	min-height: 100%;
 	display: block;
-	width: 1100px;
+	width: 1300px;
 	margin: auto;
 }
 
@@ -261,24 +261,23 @@ body {
 
 .div_photo{
 	position: absolute;
-	margin-left: 55px;
+	margin-left: 350px;
 	margin-bottom: 100px;
-	margin-top: 150px;
-	display: inline-block;
+	margin-top: -580px;
 	width: 100px;
 	height: 100px; 
 }
 .azerty{
-	margin-left: 55px;
+	
+	margin-left: 350px;
 	margin-bottom: 100px;
-	margin-top: 150px;
-	display: inline-block;
+	margin-top: -580px;
 	width: 100px;
 	height: 100px; 
 }
 
 #contenuprincipalf {
-	min-height: 500px;
+	min-height: 100%;
  	 margin-left: auto;
  	 margin-right: auto;
 	display: block;

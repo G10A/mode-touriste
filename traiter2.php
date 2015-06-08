@@ -39,7 +39,12 @@
 			
 			$req=$bdd->exec( "UPDATE offre SET espece='".$espece."', zone_de_vente= '".$zone_de_vente."', date_du_produit= '".$date_du_produit."', poids='".$poids."', prix='".$prix."', provenance='".$provenance."', quantite='".$quantite."', fruit_ou_legume='".$fruit_ou_legume."', vente_ou_echange='".$vente_ou_echange."', commentaire= '".$commentaire."', pseudo='".$pseudo."', photo='".$uploadfile."'  WHERE ID='".$offre."'");
 
-			
+			if ($uploadfile="image/.jpg";){
+				$req=$bdd->exec( "UPDATE offre SET photo='".$uploadfile."'  WHERE ID='".$offre."'");}
+				else{}
+
+
+
 			$message_right = "votre offre a bien été modifié";
 			echo $message_right;
 			}

@@ -22,7 +22,7 @@
                 $donnees = $reponse->fetch();
 
                 ?>
-
+            <div id="contenuprincipal">
 			<div id="deposeruneoffre">
 			
 
@@ -103,14 +103,7 @@
             </form>
             </fieldset>
 
-            <div class="div_photo">
 
-            </div>
-            <div class="azerty">
-
-                            <img src="<?php echo $donnees['photo']; ?>" width="100" height="100">
-
-            </div>
             <?php
                 }
                 else{
@@ -123,8 +116,17 @@
 
 
              </div>
-
+         </div>
 			<?php include("Base/footer.php"); ?>
+
+            <div class="div_photo">
+
+            </div>
+            <div class="azerty">
+
+                    <img src="<?php echo $donnees['photo']; ?>" width="100" height="100">
+
+            </div>
 		</div>
 
         <script src="javascript/preview_photo.js"></script>
