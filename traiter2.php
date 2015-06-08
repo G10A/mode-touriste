@@ -17,9 +17,6 @@
 
 	$bdd = new PDO('mysql:host=localhost;dbname=test','root','', array(PDO::ATTR_ERRMODE => PDO::ERRMODE_EXCEPTION));
 			
-			$reponse = $bdd-> prepare('SELECT * FROM offre WHERE  pseudo = ?');
-		 	$reponse -> execute(array($_SESSION['pseudo']));
-		 	$donnees = $reponse->fetch();
 	if(isset($_POST['modifie_offer'])){
 		if(isset($_SESSION['pseudo'])){
 
@@ -37,8 +34,7 @@
 			$commentaire = htmlspecialchars($_POST['commentaire']);
 			$pseudo = htmlspecialchars($_SESSION['pseudo']);
 			$offre = htmlspecialchars($_POST['idoffre']);
-			
-			$uploadfile = 'image/'.$donnees["ID"].".jpg";
+			$uploadfile = 'image/'.$offre.".jpg";
 			move_uploaded_file($_FILES['photo1']['tmp_name'], $uploadfile);
 			
 			$req=$bdd->exec( "UPDATE offre SET espece='".$espece."', zone_de_vente= '".$zone_de_vente."', date_du_produit= '".$date_du_produit."', poids='".$poids."', prix='".$prix."', provenance='".$provenance."', quantite='".$quantite."', fruit_ou_legume='".$fruit_ou_legume."', vente_ou_echange='".$vente_ou_echange."', commentaire= '".$commentaire."', pseudo='".$pseudo."', photo='".$uploadfile."'  WHERE ID='".$offre."'");
