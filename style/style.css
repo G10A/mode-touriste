@@ -1,7 +1,7 @@
 body {
 	overflow-x: hidden;
 	margin: 0;
-	background-image: url("https://static.maximumwallhd.com/fr/fond-ecran/nature/42622-trees-sky-herbs-sunrise-clouds.jpg"); 
+	/*background-image: url("https://static.maximumwallhd.com/fr/fond-ecran/nature/42622-trees-sky-herbs-sunrise-clouds.jpg");*/
 	background-attachment: fixed;
 	overflow-x: scroll;
 	background-size: cover;
@@ -419,8 +419,6 @@ body {
 	position:fixed;
 	margin-left:140px;
 	margin-top:100px;
-	border-collapse: collapse;
-	background-color: black;
 }
 
 #table_produit p{
@@ -428,7 +426,6 @@ body {
 }
 
 #table_produit td{
-	border:2px solid black;
 	height:60px;
 }
 
@@ -439,7 +436,7 @@ body {
 
 
 .lien_produit a, #lien_offre a {
-	color:white;
+	color:#062B50;
 	text-decoration: none;
 	font-weight: bold;
 }
@@ -478,11 +475,33 @@ margin:auto;
 padding:10px; 
 } 
 
+#message_accueil{
+	display: inline-block;
+	margin-top: 80px;
+	margin-left: 50px;
+	font-size: 30px;
+	max-width: 800px;
+
+}
+
+.debug{
+	color:black;
+	text-decoration: none;
+}
+
 
 #diapo {
-    position: relative;
+    display: inline-block;
     width: 200px;
+    margin-left: 150px;
+    vertical-align: top;
+    margin-top: 70px;
 }
+
+#diapo h3{
+	text-align: center;
+}
+
 #thumbs {
     width: 180px;
     float: left;
