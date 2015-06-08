@@ -97,23 +97,31 @@ body {
 			float: left;
 			padding-top: 0px;
 			margin-left: 10px;
-
 			width: 100px;
 			height: 100px;
-		}
+}
 
 
-#banner1 div#register {
+#register {
 	position: absolute;
-	margin-top: 50px;
+	margin-top: 60px;
 	margin-left: 780px;
 	list-style-type: none;
 }	
 
+#register a{
+	font-size: 20px;
+	color: black;
+	text-decoration: none;
+}
+
+#register a:hover{
+	text-decoration: underline;
+}
 
 #banner1 div#login{
 	position: absolute;
-	margin-top: -20px;
+	margin-top: -10px;
 	margin-left: 900px;
 	list-style-type: none;
 
@@ -533,15 +541,13 @@ padding:10px;
 
 #deconnexion{
 
-	color: blue;
+	color: black;
 	text-decoration: none;
 	font-size: 18px;
 	font-weight: bold;
 }
 
 #deconnexion:hover{
-
-	color: #D9011E;
 	text-decoration: underline;
 }
 
