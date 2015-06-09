@@ -1,6 +1,6 @@
 <?php
     session_start();
-// <<<<<<< HEAD
+
 
     $bdd = new PDO('mysql:host=localhost;dbname=test','root','', array(PDO::ATTR_ERRMODE => PDO::ERRMODE_EXCEPTION));
 
@@ -149,8 +149,7 @@ if(isset($_POST['register'])){
       
   }
 }
-//=======
-//>>>>>>> origin/master
+
 ?>
 
 <?php include("connexion.php"); ?>
@@ -205,13 +204,9 @@ if(isset($_POST['register'])){
 
 			    <tr>   
             <td><label for="Localité"><strong>Localité :</strong></label></td>
-<<<<<<< HEAD
+
             <td><input type="text" name="Localite" id="Localité"/></td>
                </tr>
-=======
-            <td><input type="Localité" name="Localite" id="Localité"/></td>
-          </tr>
->>>>>>> origin/master
             
             		<tr>   
             <td><label for="Nom de compte"><strong>Nom de compte :</strong></label></td>
