@@ -1,4 +1,4 @@
-<?php session_start(); ?>
+<<?php session_start(); ?>
 <?php include("connexion.php"); ?>
 <!DOCTYPE html>
 <html>
@@ -14,10 +14,19 @@
 					?>
             <div id="contenuprincipal">
 
+<<<<<<< HEAD
+=======
+
+>>>>>>> origin/master
             	<h1> Vos rendez-vous </h1></br>
             	<?php 
             	$reponse = $bdd->prepare('SELECT * FROM rdv WHERE (pseudoacheteur = ? or pseudovendeur= ?) and validation=? ');
 				$reponse -> execute(array($_SESSION['pseudo'],$_SESSION['pseudo'],"valide"));
+<<<<<<< HEAD
+=======
+
+
+>>>>>>> origin/master
 
 				 while ($donnees = $reponse->fetch())
 				{          
