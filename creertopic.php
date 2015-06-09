@@ -76,48 +76,55 @@ if(isset($_POST['go'])){
 					
 					?>
 				
-				<h1>Création d'un topic</h1>							
+					<h1> Création d'un topic </h1>							
 
-				<form  action="creertopic.php" method="post">
+					<form  action="creertopic.php" method="post">
 
-					<table>
+						<table>
 				
-						<tr>
+							<tr>
 
-							<td> <label for="Auteur"> <strong> Auteur: </strong> </label> </td>
-							<td> <?php echo $_SESSION['pseudo'] ?> </td> </br>
+								<td> <label for="auteur"> <strong> Auteur: </strong> </label> </td>
+								<td> <?php echo $_SESSION['pseudo'] ?> </td> </br>
 
-						<tr>
+							</tr>
+							<tr>
 
-            				<td> <label for="titre"> <strong> Titre: </strong> </label> </td>
-            				<td> <input type="text" name="titre" id="titre" maxlength="50"/> </td> </br> </br>
+            					<td> <label for="titre"> <strong> Titre: </strong> </label> </td>
+            					<td> <input type="text" name="titre" id="titre" maxlength="50"/> </td> </br> </br>
             	
-            			</tr>
-            			<tr>
+            				</tr>
+            				<tr>
      		 		
-     		 				<td> <label for="message"> <strong> Message: </strong> </label> </td>
-      						<td> <textarea name="message" id="message" rows="10" cols="50"> </textarea> </td>
+     		 					<td> <label for="message"> <strong> Message: </strong> </label> </td>
+      							<td> <textarea name="message" id="message" rows="10" cols="50"> </textarea> </td>
     	   		
-    	   				</tr>
-    	   				<tr>
+    	   					</tr>
+    	   					<tr>
 
-							<td> <input type="submit" name="go"  value="Poster"/> </td>	
+								<td> <input type="submit" name="go"  value="Poster"/> </td>	
 
-						</tr>
+							</tr>
 
-					</table>
+						</table>
 
-				</form>
+					</form>
 
-				<?php
+					<?php
 
-				} else {
+						if($error){
 
-					echo $successMSG;
+							echo $errorMSG;
+						
+						}
+
+					} else {
+
+						echo $successMSG;
 				
-				}
+					}
 				
-				?>
+					?>
 				
 				</div>
 			

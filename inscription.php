@@ -201,12 +201,12 @@ if(isset($_POST['register'])){
 
 			 <tr>   
             <td><label for="Localité"><strong>Localité :</strong></label></td>
-            <td><input type="Localité" name="Localite" id="Localité"/></td>
+            <td><input type="text" name="Localite" id="Localité"/></td>
                </tr>
             
-            			 <tr>   
+            		<tr>   
             <td><label for="Nom de compte"><strong>Nom de compte :</strong></label></td>
-            <td><input type="Nom de compte" name="login" id="Nom de compte"/></td>
+            <td><input type="text" name="login" id="Nom de compte"/></td>
                </tr>
 
             <tr>
@@ -229,7 +229,7 @@ if(isset($_POST['register'])){
             
             <tr>
             <td><label for="email2"><strong>Confirmez l adresse  e-mail :</strong></label></td>
-            <td><input type="email2" name="email2" id="email2"/></td>
+            <td><input type="email" name="email2" id="email2"/></td>
             </tr>
 
             

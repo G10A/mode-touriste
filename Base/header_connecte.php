@@ -1,4 +1,5 @@
 
+
 			<div id="banner1">
 
 				<div class="logo">
@@ -29,9 +30,15 @@
 				</div>
 
 				<div id="barrederecherche">
-					<form>
-						<input type="search" placeholder="Entrez un mot-clef" name="the_search">                    
+
+					<form action="recherche.php" method="post">
+						
+						<input type="search" placeholder="Entrez un mot-clef" name="the_search">
+
+						<!--<input type="submit" name="search" value="Ok"/>-->
+
 	                </form>
+
                 </div>
                 
 			</div>
