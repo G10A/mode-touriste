@@ -60,6 +60,10 @@
                         <td><label for="quantite"><strong>quantité :</strong></label></td>
                         <td><input type="text" name="quantite" id="quantite"/></td> 
                     </tr>
+                                        <tr>
+                        <td><label for="date"><strong>date et heure :</strong></label></td>
+                        <td><input type="text" name="date" id="date"/></td> 
+                    </tr>
 
                     <tr>
                         <td><label for="commentaire"><strong>commentaire</strong></label></td>

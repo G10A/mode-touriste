@@ -27,10 +27,11 @@
 			$pseudoacheteur = htmlspecialchars($_SESSION['pseudo']);
 			$offre = htmlspecialchars($_POST['idoffre']);
 			$validation="demande";
+			$date = htmlspecialchars($_POST['date']);
 
 
-			$req=$bdd->prepare('INSERT INTO rdv (Lieu, poids, prix,  quantite, commentaire, pseudoacheteur,pseudovendeur,idoffre,Validation) VALUES (?, ?, ?, ?, ?, ?, ?, ?,?)');
-			$req->execute(array($Lieu, $poids, $prix,$quantite, $commentaire, $pseudoacheteur, $pseudovendeur,$offre,$validation));
+			$req=$bdd->prepare('INSERT INTO rdv (Lieu, poids, prix,  quantite, commentaire, pseudoacheteur,pseudovendeur,idoffre,Validation,date) VALUES (?, ?, ?, ?, ?, ?, ?, ?,?,?)');
+			$req->execute(array($Lieu, $poids, $prix,$quantite, $commentaire, $pseudoacheteur, $pseudovendeur,$offre,$validation,$date));
 
 			$message = "votre demande a bien été effectué";
 			
