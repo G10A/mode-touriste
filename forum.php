@@ -28,7 +28,7 @@
 			<?php 
 			while ($data = $req -> fetch()){
 			?>
-
+			
 			<table width="1000" border="1" class="table_forum">
 
 				<tr>
