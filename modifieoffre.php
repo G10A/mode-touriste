@@ -92,12 +92,12 @@
         	        </tr>
                
                 
-                    <tr>
-                        <td><input class="input_photo" type="file" name="photo1" value=<?php $donnees['photo'] ?> ></td>
-                    </tr>
+                    
+                    
+                    
                 
                 </table>
-            
+                <input class="input_photo" type="file" name="photo1" value=<?php $donnees['photo'] ?> > </br>
                 <input type="submit" name="modifie_offer" value="Modifier l'offre"/>
         
             </form>
@@ -129,7 +129,7 @@
             </div>
 		</div>
 
-        <script src="javascript/preview_photo.js"></script>
+        <script src="javascript/preview_photo_modif.js"></script>
 
 	</body>
 </html>

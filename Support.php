@@ -26,8 +26,8 @@
 			</div>
 			</div>
 
-			<?php include("Base/footer.php"); ?>
+			
 		</div>
-
+		<?php include("Base/footer.php"); ?>
 	</body>
 </html>

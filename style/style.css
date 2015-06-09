@@ -271,6 +271,7 @@ body {
 	width: 100px;
 	height: 100px; 
 }
+
 .azerty{
 	
 	margin-left: 350px;
@@ -279,7 +280,12 @@ body {
 	width: 100px;
 	height: 100px; 
 }
-
+.divphoto{
+	margin-top: 100px;
+	display: inline-block;
+	width: 100px;
+	height: 100px; 
+}
 #contenuprincipalf {
 	min-height: 100%;
  	 margin-left: auto;

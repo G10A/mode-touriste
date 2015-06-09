@@ -97,7 +97,7 @@
             </form>
             </fieldset>
 
-            <div class="div_photo"></div>
+            <div class="divphoto"></div>
 
             
 
