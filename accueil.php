@@ -34,7 +34,6 @@
                   <img src="image/tomates.jpg" title="" alt=""></a>
                 <a href="offres.php">
                   <img src="image/fraises.jpg" title="" alt=""></a>
-                <a href="offres.php">
               </em>
           </div>
 
