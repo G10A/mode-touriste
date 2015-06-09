@@ -15,9 +15,9 @@
 			<div id="contenuprincipal">
 			<div id="help">
 			
-				<li><a href="support1">Visit </a></li>
-				<li><a href="support1">Visit </a></li>
-				<li><a href="support1">Visit </a></li>
+				<li><a href="support1"><h2>Vous avez perdu votre mot de passe</h2> </a></li>
+				<li><a href="support1"><h2>Vous ne parvenez pas à deposer une offre</h2> </a></li>
+				<li><a href="support1"><h2>Vous ne parvenez pas à contacter un autre utilisateur</h2> </a></li>
 
 
 
