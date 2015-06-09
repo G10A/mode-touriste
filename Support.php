@@ -13,13 +13,17 @@
 
 
 			<div id="contenuprincipal">
+			<div id="help">
 			
-				
+				<li><a href="support1">Visit </a></li>
+				<li><a href="support1">Visit </a></li>
+				<li><a href="support1">Visit </a></li>
 
 
 
 
 
+			</div>
 			</div>
 
 			<?php include("Base/footer.php"); ?>

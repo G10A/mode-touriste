@@ -147,7 +147,7 @@ body {
 
 #menu {
 	margin: auto;
-	width: 1400px;
+	width: 1300px;
 	height:40px;
 	position: relative;
 
@@ -177,7 +177,7 @@ body {
 	padding-top: 10px;
 	display: inline-block;
 	height: 30px;
-	width: 168px;
+	width: 160px;
 	color: white;
 	text-decoration: none;
 	font-style: italic;
@@ -576,3 +576,24 @@ padding:10px;
 	color:brown;
 }
 
+
+#help{
+	margin-top: 10px;
+	float: left;
+}
+#help li{
+	list-style: none;
+	border-bottom: 5px solid #666;
+}
+#help a{
+	position: center top;
+	display: block;
+	background-color: green;
+	text-decoration: none;
+	text-align: center;
+	box-shadow: 2px 2px 5px #ccc;
+	height: 50px; 
+	display: inline-block;
+	width: 500px}
+
+}

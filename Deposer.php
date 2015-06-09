@@ -104,7 +104,9 @@
             <?php
                 }
                 else{
-                    echo "Veuillez vous connecter pour accéder à cette fonctionnalité";
+                    echo "<div id='contenuprincipal'>
+                        Veuillez vous connecter pour accéder à cette fonctionnalité
+                        </div>";
                 }
             ?>
 
