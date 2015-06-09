@@ -22,8 +22,8 @@
 
 	var allowed_types = ['png', 'jpg', 'jpeg', 'gif'];      //On définit les extensions qui vont être autorisées
 	var fileInput = document.querySelector('.input_photo'); //on accède a l'élément input contenant la photo
-
-	var divphoto = document.querySelector('.divphoto');   // on accède au div où l'on va placer la photo
+	
+	var div_photo = document.querySelector('.div_photo');   // on accède au div où l'on va placer la photo
 
 	//On crée l'image et on l'insère seulement si elle n'existe pas encore
 	if(!imgElement){
@@ -32,7 +32,7 @@
 			imgElement.style.minHeight = '100px';
 			imgElement.style.maxWidth = '100px';
 			imgElement.style.maxHeight = '100px';
-			divphoto.appendChild(imgElement);
+			div_photo.appendChild(imgElement);
 	}
 
 

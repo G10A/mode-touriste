@@ -22,7 +22,7 @@
                 $donnees = $reponse->fetch();
 
                 ?>
-
+            <div id="contenuprincipal">
 			<div id="deposeruneoffre">
 			
 
@@ -30,9 +30,9 @@
                 if(isset($_SESSION['pseudo'])){
             ?>
 
-            <fieldset id="formulaire">
+            <fieldset id="formulaire_offre">
                 <h1>Modifier l'offre <?php echo $donnees['espece'];?></h1>
-            <form action="traiter2.php" method="post">
+            <form enctype="multipart/form-data" action="traiter2.php" method="post" >
             <input type="hidden" name="idoffre" value="<?php echo $_GET['$offre'] ?>"/></input>
                 <table>
                     <tr>         
@@ -92,27 +92,18 @@
         	        </tr>
                
                 
-                    <tr>
-                        <td><input class="input_photo" type="file" name="photo" /></td>
-                    </tr>
+                    
+                    
+                    
                 
                 </table>
-            
+                <input class="input_photo" type="file" name="photo1" value=<?php $donnees['photo'] ?> > </br>
                 <input type="submit" name="modifie_offer" value="Modifier l'offre"/>
         
             </form>
             </fieldset>
 
-            <div class="div_photo">
 
-            </div>
-            <div class="azerty">
-                            <?php
-                                $file = $donnees['photo'];  
-                            ?>
-                            <img src="<?php echo $file; ?>" width="100" height="100">
-
-            </div>
             <?php
                 }
                 else{
@@ -125,11 +116,20 @@
 
 
              </div>
-
+         </div>
 			<?php include("Base/footer.php"); ?>
+
+            <div class="div_photo">
+
+            </div>
+            <div class="azerty">
+
+                    <img src="<?php echo $donnees['photo']; ?>" width="100" height="100">
+
+            </div>
 		</div>
 
-        <script src="javascript/preview_photo.js"></script>
+        <script src="javascript/preview_photo_modif.js"></script>
 
 	</body>
 </html>

@@ -1,20 +1,53 @@
 body {
 	overflow-x: hidden;
 	margin: 0;
-	background-image: url("https://static.maximumwallhd.com/fr/fond-ecran/nature/42622-trees-sky-herbs-sunrise-clouds.jpg"); 
+	/*background-image: url("https://static.maximumwallhd.com/fr/fond-ecran/nature/42622-trees-sky-herbs-sunrise-clouds.jpg");*/
 	background-attachment: fixed;
 	overflow-x: scroll;
 	background-size: cover;
 }
 
-/*  https://static.maximumwallhd.com/fr/fond-ecran/abstrait/107808-white-green-background-lines-light-green.jpg */
-/*  http://www.fantom-xp.com/wallpapers/29/Nature_Mysterys.jpg */
-/* http://thumbs.dreamstime.com/z/bulles-vertes-de-fond-de-nature-13978833.jpg */
-/* https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTGEHnxqizqqzVpLS7B2dSsa3lYhVAIKO4H8vX6me8EiCOpPhUXfg */
-/* http://www.google.fr/url?source=imglanding&ct=img&q=http://www.favorisxp.com/fond-ecran-vista/fond-ecran-vista-macro-palme-verte.jpg&sa=X&ei=HDhmVZqfL8L2UIGkgMAM&ved=0CAkQ8wc4GA&usg=AFQjCNFYmTjVdadyt93UmEDytuLkeBYWKA */
+#filtre{
 
+	position:fixed;
+	width:100%;
+	height:100%;
+	top:0%;
+	left:0%;
+	background-color:#CCA;
+	opacity:0.6;
+	display:none;
+	z-index: 10;
+} 
 
-/*  https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSP7ieZHsJQtx-FtVBFeFufv2qmdjEWDGg37OJvTr8hVlyYbFbf   URL du fond de la baniere */
+#boite{
+
+	position:fixed;
+	width:30%;
+	height:40%;
+	top:30%;
+	left:35%;
+	display:;
+	background-color:white;
+	z-index: 11;
+	display:none;
+	border: 1px solid black;
+}
+
+#boite_header{
+	text-align:center;
+	background-color: #35C031;
+	margin-top: -21px;
+}
+
+#formulaire_connexion{
+	margin-left: 100px;
+	margin-top: 50px;
+}
+
+#annuler{
+	margin-left: 10px;
+}
 
 #site {
 
@@ -33,9 +66,22 @@ body {
 
 #banner1 div#erreur_connexion{
 	position: absolute;
-	margin-top: 70px;
-	margin-left: 680px
+	margin-top: 45px;
+	margin-left: 880px;
+	max-height: 40px;
+	color: red;
 }
+
+#banner1 div#erreur_connexion p{
+	background-color: black;
+	margin-left: 20px;
+}
+
+#se_connecter{
+	margin-top: 50px;
+	margin-left: 30px;
+}
+
 #banner1 div#titre {
 	position: absolute;
 	margin-top: 5px;
@@ -51,23 +97,31 @@ body {
 			float: left;
 			padding-top: 0px;
 			margin-left: 10px;
-
 			width: 100px;
 			height: 100px;
-		}
+}
 
 
-#banner1 div#register {
+#register {
 	position: absolute;
-	margin-top: 50px;
+	margin-top: 60px;
 	margin-left: 780px;
 	list-style-type: none;
 }	
 
+#register a{
+	font-size: 20px;
+	color: black;
+	text-decoration: none;
+}
+
+#register a:hover{
+	text-decoration: underline;
+}
 
 #banner1 div#login{
 	position: absolute;
-	margin-top: -20px;
+	margin-top: -10px;
 	margin-left: 900px;
 	list-style-type: none;
 
@@ -106,32 +160,38 @@ body {
 	
 }
 
-#menu ul li {
-
-	border-right: 1px solid black;
+#menu li {
+	border-right: 1px solid white;
 	display: inline-block;
 	list-style-type: none;
 	background-color: black;
-
 }
 
-#menu ul li a {
+#menu li:hover{
+	background-color: #BDD4B0;
+}
+
+#menu a {
 	position: center top;
 	text-align: center;
 	padding-top: 10px;
 	display: inline-block;
 	height: 30px;
-	width: 182px;
+	width: 160px;
 	color: white;
 	text-decoration: none;
 	font-style: italic;
 
 }
 
+#menu a:hover{
+	color:black;
+}
+
 #contenuprincipal {
 	min-height: 100%;
 	display: block;
-	width: 1100px;
+	width: 1300px;
 	margin: auto;
 }
 
@@ -160,7 +220,26 @@ body {
 	text-decoration: underline;
 }
 
-#formulaire{
+
+#formulaire_inscription{
+
+	background-color: #D5E896;
+	margin-top: 40px;
+	margin-bottom: 70px;
+	width: 750px;
+	border: 1px solid black;
+	margin-left: 100px;
+	border-radius: 1%;
+}
+
+#formulaire_inscription h1{
+	text-align: center;
+	text-decoration: underline;
+	margin-top: 0px;
+}
+	
+
+#formulaire_offre{
 
 	border: 2px dotted black;
 	border-radius: 4%;
@@ -172,38 +251,43 @@ body {
 	vertical-align: top;		
 }
 
-#formulaire div{
+#formulaire_offre div{
 	display: inline-block;
 	margin-bottom: 25px;
 	margin-left: 68px;
 	margin-top: -10px;
 }
 
- #formulaire table{
+ #formulaire_offre table{
 	
 	margin-left: 10px;
 }
 
 .div_photo{
 	position: absolute;
-	margin-left: 55px;
+	margin-left: 560px;
 	margin-bottom: 100px;
-	margin-top: 150px;
-	display: inline-block;
-	width: 100px;
-	height: 100px; 
-}
-.azerty{
-	margin-left: 55px;
-	margin-bottom: 100px;
-	margin-top: 150px;
-	display: inline-block;
+	margin-top: -500px;
 	width: 100px;
 	height: 100px; 
 }
 
+.azerty{
+	
+	margin-left: 560px;
+	margin-bottom: 100px;
+	margin-top: -500px;
+	width: 100px;
+	height: 100px; 
+}
+.divphoto{
+	margin-top: 100px;
+	display: inline-block;
+	width: 100px;
+	height: 100px; 
+}
 #contenuprincipalf {
-	min-height: 500px;
+	min-height: 100%;
  	 margin-left: auto;
  	 margin-right: auto;
 	display: block;
@@ -318,7 +402,7 @@ body {
 	max-width: 100px;
 	max-height: 100px;
 	height:100px;
-	background-color: #B5BBC1;
+/*	background-color: #B5BBC1;  */
 	margin-top: -300px;
 }
 
@@ -340,31 +424,43 @@ body {
 #lien_offre {
 
 	margin: auto;
-	font-size: 35px;
+	font-size: 30px;
 	margin-top: 80px;
 }
 
 #lien_offre td {
-
+	color:;
 	padding: 20px;
 }
 
+#table_produit{
+	display: inline-block;
+	position:fixed;
+	margin-left:140px;
+	margin-top:100px;
+}
+
+#table_produit p{
+	
+}
+
+#table_produit td{
+	height:60px;
+}
 
 .lien_produit {
-
-	display: inline-block;
-	margin-left: 200px;
-	margin-top: 150px;
-	font-size: 35px;
-	position: fixed;
+	
+	font-size: 25px;
 }
+
 
 .lien_produit a, #lien_offre a {
-	color: #062B50;
+	color:#062B50;
 	text-decoration: none;
 	font-weight: bold;
-	font-style: italic;
 }
+
+#lien_offre a{color: #062B50;}
 
 .lien_produit a:hover, #lien_offre a:hover {
 	text-decoration: underline;
@@ -398,11 +494,33 @@ margin:auto;
 padding:10px; 
 } 
 
+#message_accueil{
+	display: inline-block;
+	margin-top: 80px;
+	margin-left: 50px;
+	font-size: 30px;
+	max-width: 800px;
+
+}
+
+.debug{
+	color:black;
+	text-decoration: none;
+}
+
 
 #diapo {
-    position: relative;
+    display: inline-block;
     width: 200px;
+    margin-left: 150px;
+    vertical-align: top;
+    margin-top: 70px;
 }
+
+#diapo h3{
+	text-align: center;
+}
+
 #thumbs {
     width: 180px;
     float: left;
@@ -434,18 +552,17 @@ padding:10px;
 
 #deconnexion{
 
-	color: blue;
+	color: black;
 	text-decoration: none;
 	font-size: 18px;
 	font-weight: bold;
 }
 
 #deconnexion:hover{
-
-	color: #D9011E;
 	text-decoration: underline;
 }
 
+<<<<<<< HEAD
 /*table tr:nth-child(2n+1){
 
     background-color: #33AABB;
@@ -457,4 +574,50 @@ table tr:nth-child(3n+2){
     font-weight: bold;
 
 }*/
+=======
+.table_forum{
+	margin:auto;
+}
 
+.table_forum a{
+	color: #16CA2E;
+}
+
+#tuto_forum{
+	text-align: center;
+}
+
+#tuto_forum a{
+	color: black;
+}
+
+#tuto_forum a:hover{
+	color:brown;
+}
+
+#repondre_forum{
+	text-align: center;
+	font-size: 17pt serif;
+}
+
+#help{
+	margin-top: 10px;
+	float: left;
+}
+#help li{
+	list-style: none;
+	border-bottom: 5px solid #666;
+}
+#help a{
+	position: center top;
+	display: block;
+	background-color: green;
+	text-decoration: none;
+	text-align: center;
+	box-shadow: 2px 2px 5px #ccc;
+	height: 50px; 
+	display: inline-block;
+	width: 500px}
+>>>>>>> origin/master
+
+}

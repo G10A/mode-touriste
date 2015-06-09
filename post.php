@@ -25,14 +25,14 @@
 
 				?>
 
-				<table width="1000" border="2">
+				<table class="table_forum" width="1000" border="2">
 
 					<tr>
 
 						<td> Auteur: </td>
 						<td> <?php echo $data['auteur']; ?> </td>
 
-					</tr>
+					</tr></br></br>
 
 					<tr>
 
@@ -57,18 +57,17 @@
 			?>
 
 			<div>
-
-					 <p style= "font:  17pt serif">
+					 <p id="repondre_forum">
 				    <a href="creerpost.php?id_topic=<?php echo $_GET['id_topic']; ?>"> <input type="submit" name="post"  value="Répondre"/></a>
-				    </p>
-			
+				    </p>			
 			</div>
 
 
 
-				<div >
+		</div >
+
 			<?php include("Base/footer.php"); ?>
-			</div>
+		
 
 	</body>
 </html>

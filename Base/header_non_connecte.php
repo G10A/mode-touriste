@@ -14,20 +14,14 @@
 
 				<div id="erreur_connexion">
 					
-					<?php if(isset($_SESSION['erreur_connexion'])){ 
-					echo '<p style="color:red">'.$_SESSION['erreur_connexion'].'</p>'; 
-					$_SESSION['erreur_connexion']= "   ";
+					<?php if(isset($_SESSION['erreur_connexion'])){  ?>
+					<p id="message_erreur"><?php echo $_SESSION['erreur_connexion']; ?></p>
+					<?php	$_SESSION['erreur_connexion']= "   ";
 			 		} 	?>
 				</div>
 
 				<div id="login">
-				<form method="post" action="accueil.php"> 
-				    <p style= "font:  17pt serif">
-				        <input type="text" name="pseudo" id="pseudo" placeholder="pseudo" size="20" maxlength="50"  /><br>
-				        <input type="password" name="MDP" id="MDP" placeholder="mot de passe" size="20" /><br>
-				        <input type="submit" name="connexion"  value=" Connectez vous"/>
-				    </p>
-				</form>
+					<button type="button" id="se_connecter" >Se Connecter</button>
 				</div>
 
 				<div id="langue">
@@ -51,8 +45,8 @@
 						<input type="search" placeholder="Entrez un mot-clef" name="the_search">                    
 	                </form>
                 </div>
-                
-
+          
 			</div>
 
-	
+		<?php include("lightbox.php"); ?>
+			

@@ -16,14 +16,12 @@
 	
 
 	$bdd = new PDO('mysql:host=localhost;dbname=test','root','', array(PDO::ATTR_ERRMODE => PDO::ERRMODE_EXCEPTION));
-
-
+			
 	if(isset($_POST['modifie_offer'])){
 		if(isset($_SESSION['pseudo'])){
 
+
 			if (isset($_POST['espece']) && isset($_POST['zone_de_vente']) && isset($_POST['date_du_produit']) && isset($_POST['fruit_ou_legume']) && isset($_POST['vente_ou_echange']) && isset($_POST['poids']) && isset($_POST['prix']) && isset($_POST['provenance']) && isset($_POST['quantite']) && isset($_POST['commentaire'])){
-			
-			
 			$espece = htmlspecialchars($_POST['espece']);
 			$zone_de_vente = htmlspecialchars($_POST['zone_de_vente']);
 			$date_du_produit = htmlspecialchars($_POST['date_du_produit']);
@@ -36,11 +34,17 @@
 			$commentaire = htmlspecialchars($_POST['commentaire']);
 			$pseudo = htmlspecialchars($_SESSION['pseudo']);
 			$offre = htmlspecialchars($_POST['idoffre']);
-
+			$uploadfile = 'image/'.$offre.".jpg";
+			move_uploaded_file($_FILES['photo1']['tmp_name'], $uploadfile);
 			
-			$req=$bdd->exec( "UPDATE offre SET espece='".$espece."', zone_de_vente= '".$zone_de_vente."', date_du_produit= '".$date_du_produit."', poids='".$poids."', prix='".$prix."', provenance='".$provenance."', quantite='".$quantite."', fruit_ou_legume='".$fruit_ou_legume."', vente_ou_echange='".$vente_ou_echange."', commentaire= '".$commentaire."', pseudo='".$pseudo."' WHERE ID='".$offre."'");
+			$req=$bdd->exec( "UPDATE offre SET espece='".$espece."', zone_de_vente= '".$zone_de_vente."', date_du_produit= '".$date_du_produit."', poids='".$poids."', prix='".$prix."', provenance='".$provenance."', quantite='".$quantite."', fruit_ou_legume='".$fruit_ou_legume."', vente_ou_echange='".$vente_ou_echange."', commentaire= '".$commentaire."', pseudo='".$pseudo."', photo='".$uploadfile."'  WHERE ID='".$offre."'");
 
-			
+			if ($uploadfile!="image/.jpg"){
+				$req=$bdd->exec( "UPDATE offre SET photo='".$uploadfile."'  WHERE ID='".$offre."'");}
+				else{}
+
+
+
 			$message_right = "votre offre a bien été modifié";
 			echo $message_right;
 			}

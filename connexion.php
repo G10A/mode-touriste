@@ -32,6 +32,7 @@
 					    	//On regarde si le mot de passe est le bon
 							if($donnees['mot_de_passe'] == $_POST['MDP']){	
 
+									
 									$connecte = true;
 							}
 							else{

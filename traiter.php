@@ -36,18 +36,21 @@
 			$pseudo = htmlspecialchars($_SESSION['pseudo']);
 
 
-			$uploaddir = 'image/'. rand(1,999);
-			$uploadfile = $uploaddir .basename($_FILES['photo']['name']);
-			$download_file = 'image/'.basename($_FILES['photo']['name']);
+
+			$req=$bdd->prepare('INSERT INTO offre(espece, zone_de_vente, date_du_produit, poids, prix, provenance, quantite, fruit_ou_legume, vente_ou_echange, commentaire, pseudo) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)');
+			$req->execute(array($espece, $zone_de_vente, $date_du_produit, $poids, $prix, $provenance, $quantite, $fruit_ou_legume, $vente_ou_echange, $commentaire, $pseudo));
+
+
+
+			$IDoffre=$bdd->lastInsertId();
+
+			$uploadfile = "image/" .$g.".jpg";
 			
 			echo '<pre>';
 			move_uploaded_file($_FILES['photo']['tmp_name'], $uploadfile);
 
-
-			$req=$bdd->prepare('INSERT INTO offre(espece, zone_de_vente, date_du_produit, poids, prix, provenance, quantite, fruit_ou_legume, vente_ou_echange, commentaire, pseudo, photo) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)');
-			$req->execute(array($espece, $zone_de_vente, $date_du_produit, $poids, $prix, $provenance, $quantite, $fruit_ou_legume, $vente_ou_echange, $commentaire, $pseudo, $uploadfile));
-
-
+			$req=$bdd->prepare("UPDATE offre SET photo='".$uploadfile."' WHERE ID='".$IDoffre."'");
+			$req->execute(array($uploadfile));
 
 			$message_right = "votre offre a bien été déposée";
 			echo $message_right;

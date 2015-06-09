@@ -10,16 +10,18 @@
 
 		<div id="site">
 			<?php include("Base/choixheader.php"); ?>
-		</div> 
+		 
 
 			<div>
 					 <p style= "font:  17pt serif">
+				<?php if(isset($_SESSION['pseudo'])){ ?>
 				     <a href="creertopic.php"><input type="submit" name="connexion"  value=" Créer un topic"/></a>
+				<?php } ?>
 				    </p>
 			</div>
 
 		<div id="contenuprincipalf">
-			<h1>Réglementation du forum</h1>
+			<h1 style="text-decoration:underline">Réglementation du forum</h1>
 
 			<h2>Regarder le forum</h2>
 			Il n'est pas nécessaire d'être connecter pour regarder les différents topic poster par les utilisateurs. Vous pouvez cependant avertir les administrateurs du forum d'un contenue non 
@@ -39,6 +41,7 @@
 
 			<?php include("Base/footer.php"); ?>
 		</div>
+	</div>
 
 	</body>
 </html>

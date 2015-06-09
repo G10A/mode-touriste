@@ -8,10 +8,10 @@
 	<?php include("Base/head.php"); ?>
 	<body>
 
-		<div id="site">
+		
 			<?php include("Base/choixheader.php"); ?>
 
-
+        <div id="site">
 
 
 			<div id="deposeruneoffre">
@@ -24,7 +24,7 @@
 
             
 
-            <fieldset id="formulaire">
+            <fieldset id="formulaire_offre">
 
                 <h1>Déposer une offre</h1>
             <form enctype="multipart/form-data" action="traiter.php" method="post">
@@ -83,38 +83,36 @@
         	        </tr>
                
                 
-                    <tr>
-                        <td><input class="input_photo" type="file" name="photo" /></td>
-                    </tr>
+                    
 
-                    <tr>
-                        <td><input type="submit" name="register_offer" value="Déposer l'offre"/></td>
-                    </tr>    
+                    
+                        
+                      
                 </table>
-            
-                
+                <input class="input_photo" type="file" name="photo" /></br>
+                <input type="submit" name="register_offer" value="Déposer l'offre"/>
         
             </form>
             </fieldset>
 
-            <div class="div_photo"></div>
+            <div class="divphoto"></div>
 
-            </div>
+            
 
             <?php
                 }
                 else{
-                    echo "Veuillez vous connecter pour accéder à cette fonctionnalité";
+                    echo "<div id='contenuprincipal'>
+                        Veuillez vous connecter pour accéder à cette fonctionnalité
+                        </div>";
                 }
             ?>
 
 					
             
-
+            </div>
+        </div>
 			<?php include("Base/footer.php"); ?>
-		    </div>
-
-
         
         <script src="javascript/preview_photo.js"></script>
 

@@ -14,11 +14,22 @@
 			
 			$req = $bdd->prepare('SELECT * FROM forum_topic ORDER BY last_post DESC');
 			$req -> execute(); 
+			?>
 
+			
+			<h1 id="tuto_forum"><a href="tutoforum.php">Réglementation du forum</a></h1>
+
+			 <p style= "font:  17pt serif">
+				<?php if(isset($_SESSION['pseudo'])){ ?>
+				    <a href="creertopic.php"> <input type="submit" name="topic"  value=" Créer un topic"/></a>
+				<?php } ?>
+			</p>
+
+			<?php 
 			while ($data = $req -> fetch()){
 			?>
 
-			<table width="1000" border="1">
+			<table width="1000" border="1" class="table_forum">
 
 				<tr>
 
@@ -44,19 +55,13 @@
 			<?php } ?>
 
 
-			<div>
-					 <p style= "font:  17pt serif">
-				    <a href="creertopic.php"> <input type="submit" name="topic"  value=" Créer un topic"/></a>
-				    </p>
-			</div>
-
-			<div id="contenuprincipalf">
-			<h1><a href="tutoforum.php">Réglementation du forum</a></h1>
-			</div>
-
-				<div >
+			
+					
+			
+		</div>
+				
 			<?php include("Base/footer.php"); ?>
-			</div>
+			
 
 	</body>
 </html>
