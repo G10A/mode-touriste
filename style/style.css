@@ -588,22 +588,23 @@ padding:10px;
 }
 
 #help{
-	margin-top: 10px;
+	margin-left: 70px;
+	margin-top: 20px;
 	float: left;
 }
 #help li{
 	list-style: none;
-	border-bottom: 5px solid #666;
+	border-bottom: 20px solid #888;
 }
 #help a{
 	position: center top;
 	display: block;
-	background-color: green;
+	background-color: #047D00;
 	text-decoration: none;
 	text-align: center;
 	box-shadow: 2px 2px 5px #ccc;
-	height: 50px; 
+	height: 65px; 
 	display: inline-block;
-	width: 500px}
+	width: 600px}
 
 }
