@@ -77,7 +77,7 @@
 						<tr>
 							<td> date: </td>
 							<td> <?php echo $donnees['date'];?></td>
-							</table>
+							</table> <input type="submit" name="register_offer" value="Rendez-vous fini"/>
 							</fieldset>
 
 
@@ -133,7 +133,9 @@
 						<tr>
 							<td> date: </td>
 							<td> <?php echo $donnees['date'];?></td>
-							</table>
+							</table><input type="submit" name="register_offer" value="Accepter l'offre"/>
+									<input type="submit" name="register_offer" value="Refuser l'offre"/>
+									Si vous refuser contacter le vendeur : <?php echo $donnees2["pseudoacheteur"]
 							</fieldset>
 
 
