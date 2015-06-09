@@ -30,7 +30,7 @@
                 if(isset($_SESSION['pseudo'])){
             ?>
 
-            <fieldset id="formulaire">
+            <fieldset id="formulaire_offre">
                 <h1>Modifier l'offre <?php echo $donnees['espece'];?></h1>
             <form enctype="multipart/form-data" action="traiter2.php" method="post" >
             <input type="hidden" name="idoffre" value="<?php echo $_GET['$offre'] ?>"/></input>

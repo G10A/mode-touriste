@@ -83,16 +83,14 @@
         	        </tr>
                
                 
-                    <tr>
-                        <td><input class="input_photo" type="file" name="photo" /></td>
-                    </tr>
+                    
 
-                    <tr>
-                        <td><input type="submit" name="register_offer" value="Déposer l'offre"/></td>
-                    </tr>    
+                    
+                        
+                      
                 </table>
-            
-                
+                <input class="input_photo" type="file" name="photo" /></br>
+                <input type="submit" name="register_offer" value="Déposer l'offre"/>
         
             </form>
             </fieldset>
