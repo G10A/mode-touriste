@@ -69,7 +69,7 @@ if(isset($_POST['register'])){
 
             $login = $_POST['login'];
 
-            $pass = $_POST['pass'];
+            $pass = crypt($_POST['pass']);
 
             $email = NULL;
           }
